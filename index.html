@@ -17,6 +17,8 @@
   --radius-sm:4px; --radius-md:10px; --radius-lg:16px; --radius-pill:999px;
   --ink-soft:#cfcfcf; --ink-faint:#9a9a9a; --ctl:#3a3a3a; --track:#333333; --pill-neutral:#2a2a2a; --ok-bg:#15241b; --edge:#44444a;
   --phone-bg:#0e0e0e; --black:#000000; --dim:rgba(0,0,0,.55); --sec-bg:#1f1f1f; --sec-line:#3a3a40;
+  --sig-red:#ff6b6b; --sig-yellow:#f5c04a; --sig-green:#4cc38a;
+  --sig-red-h:rgba(255,107,107,.22); --sig-yellow-h:rgba(245,192,74,.22); --sig-green-h:rgba(76,195,138,.22);
   --font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
   --nav-h:56px;
 }
@@ -57,6 +59,11 @@ section.item{scroll-margin-top:calc(var(--nav-h) + 16px);padding:32px;background
 .brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 28px}
 .brief div{min-width:0}
 .brief h3{margin:0 0 6px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted)}
+.brief h3{display:flex;align-items:center;gap:10px}
+.brief h3::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--sig);box-shadow:0 0 0 4px var(--sig-h)}
+.brief div:nth-child(1){--sig:var(--sig-yellow);--sig-h:var(--sig-yellow-h)}
+.brief div:nth-child(2){--sig:var(--sig-red);--sig-h:var(--sig-red-h)}
+.brief div:nth-child(3){--sig:var(--sig-green);--sig-h:var(--sig-green-h)}
 .brief p{margin:0;font-size:16px;line-height:1.55;color:var(--ink-soft)}
 .todo-box{margin-top:20px;border:1px dashed var(--hairline);border-radius:var(--radius-lg);padding:28px;color:var(--ink-muted);font-size:13px}
 
@@ -394,6 +401,8 @@ button.sw{cursor:pointer}
   --accent-focus:#a3208f; --focus-bg:#f8e6f5; --accent-feed:#0e6f84; --feed-bg:#dff1f5;
   --accent-done:#1e7a46; --ok-bg:#dff3e7; --accent-ai:#6b4fd8; --chip-bg:#f0f0f5;
   --surface-inverse:#17171a; --ink-inverse:#ffffff;
+  --sig-red:#d93a3a; --sig-yellow:#c98a0a; --sig-green:#1f9254;
+  --sig-red-h:rgba(217,58,58,.18); --sig-yellow-h:rgba(201,138,10,.2); --sig-green-h:rgba(31,146,84,.18);
   --ctl:#c4c4cc; --track:#dcdce2; --pill-neutral:#e6e6eb; --edge:#a9a9b3; --phone-bg:#f3f3f6; --black:#f3f3f6; --dim:rgba(255,255,255,.72);
 }
 :root[data-theme="light"] .nav{background:rgba(236,238,242,.94);border-bottom-color:#d3d3da}
