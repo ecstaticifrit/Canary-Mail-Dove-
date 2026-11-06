@@ -122,6 +122,291 @@ button.sw{cursor:pointer}
 .comp-b{padding:12px 14px;color:var(--ink-muted);font-size:13px}
 .opt-in{display:flex;align-items:center;gap:8px;font-size:12px;color:#cfcfcf}
 
+/* ---------- A2: trial ---------- */
+.side-trial{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--surface-raised);border-radius:var(--radius-lg);padding:14px 16px}
+.side-trial p{margin:0;font-size:13px;line-height:1.35}
+.side-trial p span{color:var(--ink-muted)}
+.sheet{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:20px;text-align:center}
+.sheet .kicker{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ai)}
+.sheet h4{margin:8px 0 4px;font-size:18px;font-weight:600}
+.sheet .big{font-size:13px;color:#c9c9c9;margin:0 0 14px}
+.sheet .fine{margin:10px 0 0;font-size:12px;color:var(--ink-muted)}
+.sheet .btn{width:100%;padding:10px 16px}
+.tabs{display:flex;gap:4px;padding:4px;background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-pill);margin-bottom:14px;flex-wrap:wrap}
+.tab{flex:1 1 auto;font:500 12px var(--font);color:var(--ink-muted);background:transparent;border:0;border-radius:var(--radius-pill);padding:7px 12px;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--surface-selected);color:var(--ink)}
+.panel[hidden]{display:none}
+.prog{height:6px;border-radius:var(--radius-pill);background:#333;overflow:hidden;margin:10px 0 6px}
+.prog i{display:block;height:100%;background:var(--accent-ai);border-radius:var(--radius-pill)}
+.prog-l{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-muted)}
+.steps{list-style:none;margin:14px 0 0;padding:0;text-align:left;display:flex;flex-direction:column;gap:8px}
+.steps li{display:flex;align-items:center;gap:10px;font-size:13px}
+.ck{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--ink-muted);flex:none;display:grid;place-items:center;font-size:11px;line-height:1}
+.steps li.done .ck{background:var(--accent-done);border-color:var(--accent-done);color:var(--ink-inverse)}
+.steps li.done{color:#cfcfcf}
+.mail{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden}
+.mail-h{padding:12px 16px;border-bottom:1px solid var(--hairline);font-size:12px;color:var(--ink-muted)}
+.mail-h b{display:block;color:var(--ink);font-size:14px;font-weight:600;margin-bottom:2px}
+.mail-b{padding:16px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0 16px}
+.stats div{background:var(--surface-raised);border-radius:var(--radius-md);padding:10px 12px}
+.stats b{display:block;font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.stats span{font-size:12px;color:var(--ink-muted)}
+.mail-b p{margin:0 0 10px;font-size:13px;color:#cfcfcf}
+.lnk{font-size:12px;color:var(--ink-muted);text-decoration:underline;margin-left:8px;cursor:pointer}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0 14px;text-align:left}
+.two h5{margin:0 0 6px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted)}
+.two ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:12px;color:#cfcfcf}
+.two li::before{content:"+ ";color:var(--accent-done)}
+.two .pro li::before{content:"✦ ";color:var(--accent-ai)}
+.meter{margin-top:12px;font-size:12px;color:var(--ink-muted);text-align:left}
+
+/* ---------- A3: free tier ---------- */
+.cmp{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden}
+.cmp th,.cmp td{padding:10px 14px;text-align:left;border-top:1px solid var(--hairline);vertical-align:middle}
+.cmp thead th{border-top:0;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted);background:var(--surface-raised)}
+.cmp td.c,.cmp th.c{text-align:center;width:84px}
+.cmp tbody th{font-weight:500}
+.y{color:var(--accent-done);font-weight:700}
+.n{color:var(--ink-muted)}
+.cmp .mv{margin-left:6px}
+.askbar{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:12px 14px}
+.askbar .in{background:var(--surface-list);border-radius:var(--radius-md);padding:10px 12px;font-size:13px;color:var(--ink-muted);min-height:40px}
+.askbar.out .in{opacity:.6}
+.askbar .meter-row{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+.segs{display:flex;gap:3px}
+.segs i{width:14px;height:6px;border-radius:var(--radius-pill);background:var(--accent-ai);display:block}
+.segs i.used{background:#3a3a3a}
+.askbar.low .segs i:not(.used){background:var(--accent-focus)}
+.askbar.out .segs i{background:#3a3a3a}
+.askbar .lbl{font-size:12px;font-weight:500}
+.askbar.low .lbl{color:var(--accent-focus)}
+.askbar .m{margin:8px 0 0;font-size:12px;color:var(--ink-muted)}
+.ctl{display:flex;align-items:center;gap:12px;margin-top:14px;font-size:12px;color:var(--ink-muted)}
+.ctl input{flex:1;min-width:0;accent-color:var(--accent-ai)}
+.ctl output{font-variant-numeric:tabular-nums;color:var(--ink);min-width:2ch;text-align:right}
+.use-list{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;text-align:left}
+.use-list li{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:8px 0;border-top:1px solid var(--hairline)}
+.use-list li:first-child{border-top:0}
+.use-list span{color:var(--ink-muted);white-space:nowrap}
+
+/* ---------- A4: Teach Dove ---------- */
+.fld{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;align-items:center;margin-bottom:10px;font-size:13px}
+.fld label{color:var(--ink-muted);font-weight:500}
+.fld .box{background:var(--surface-raised);border-radius:var(--radius-md);padding:10px 12px;font-weight:600;display:flex;justify-content:space-between;gap:8px;min-width:0}
+.fld .box span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fld .box i{font-style:normal;color:var(--ink-muted)}
+.sheet-f{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:16px}
+.ta{width:100%;min-height:84px;resize:vertical;font:400 13px/1.5 var(--font);color:var(--ink);background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-md);padding:10px 12px}
+.ta:focus-visible{outline:2px solid var(--accent-ai);outline-offset:1px}
+.rule{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:var(--surface-raised);border-radius:var(--radius-md);font-size:13px;margin-top:8px}
+.rule b{font-weight:600}
+.arrow{color:var(--ink-muted)}
+.pill-f{font-size:11px;font-weight:500;color:var(--accent-focus);background:var(--focus-bg);border-radius:var(--radius-sm);padding:2px 8px;white-space:nowrap}
+.pill-d{font-size:11px;font-weight:500;color:var(--accent-feed);background:var(--feed-bg);border-radius:var(--radius-sm);padding:2px 8px;white-space:nowrap}
+.impact{margin:14px 0 8px;font-size:13px;font-weight:600}
+.mini{list-style:none;margin:0;padding:0;font-size:12px}
+.mini li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid var(--hairline);color:#cfcfcf}
+.mini li span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mini li span:last-child{white-space:nowrap;color:var(--ink-muted)}
+.erow{display:flex;align-items:center;gap:12px;height:48px;padding:0 12px;background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-md);font-size:13px;position:relative}
+.erow .s{width:96px;flex:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.erow .j{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#cfcfcf}
+.wrong{font:500 11px var(--font);color:var(--ink);background:var(--surface-raised);border:1px solid var(--hairline);border-radius:var(--radius-pill);padding:4px 10px;cursor:pointer}
+.wrong[aria-expanded="true"]{border-color:var(--accent-ai)}
+.menu{margin-top:8px;background:var(--surface-raised);border:1px solid var(--hairline);border-radius:var(--radius-md);padding:6px;display:flex;flex-direction:column;gap:2px}
+.menu[hidden]{display:none}
+.menu button{font:500 13px var(--font);text-align:left;color:var(--ink);background:transparent;border:0;border-radius:var(--radius-sm);padding:8px 10px;cursor:pointer}
+.menu button:hover{background:var(--surface-selected)}
+.menu small{display:block;color:var(--ink-muted);font-weight:400;font-size:12px}
+.toast{margin-top:10px;background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-md);padding:10px 12px;font-size:13px;display:flex;gap:8px;align-items:center}
+.toast[hidden]{display:none}
+.toast .sp{color:var(--accent-ai)}
+.rrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--hairline);font-size:13px}
+.rrow:first-child{border-top:0;padding-top:0}
+.rrow small{display:block;color:var(--ink-muted);font-size:12px;margin-top:2px}
+.why{margin-top:12px;background:var(--surface-raised);border-radius:var(--radius-md);padding:10px 12px;font-size:12px;color:#cfcfcf}
+.why b{color:var(--ink)}
+
+/* ---------- A5: sessions ---------- */
+.black{background:#000;border-radius:var(--radius-lg);min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:24px;border:1px solid var(--hairline)}
+.black p{margin:0;font-size:12px;color:#9a9a9a}
+.btab{border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden;background:var(--surface-list)}
+.btab-bar{display:flex;gap:4px;padding:6px 8px 0;background:var(--surface-sidebar)}
+.bt{font-size:11px;padding:6px 12px;border-radius:8px 8px 0 0;color:var(--ink-muted);background:transparent;white-space:nowrap}
+.bt.on{background:var(--surface-list);color:var(--ink)}
+.btab-b{padding:12px;display:flex;flex-direction:column;gap:6px}
+.sk{display:flex;align-items:center;gap:10px;height:30px;font-size:12px;color:#cfcfcf}
+.sk i{width:18px;height:18px;border-radius:50%;background:#333;flex:none}
+.sk b{width:90px;flex:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sk span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink-muted)}
+.banner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--surface-selected);padding:8px 12px;font-size:12px}
+.sync{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--accent-done)}
+.sync::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-done)}
+.warn-box{border:1px dashed var(--hairline);border-radius:var(--radius-md);padding:10px 12px;font-size:12px;color:var(--ink-muted);margin-top:12px}
+.warn-box b{color:var(--ink)}
+
+/* ---------- shared bits for A6 to A8 ---------- */
+.card{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:14px 16px}
+.card+.card{margin-top:12px}
+.card h5{margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted)}
+.entry{display:flex;gap:12px;align-items:flex-start;font-size:13px}
+.avatar{width:24px;height:24px;border-radius:50%;background:var(--accent-done);flex:none;opacity:.85}
+.chip-t{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:500;color:var(--accent-focus);background:var(--focus-bg);border-radius:var(--radius-pill);padding:4px 10px;margin-top:6px}
+.src{margin-top:8px;font-size:12px;color:var(--ink-muted)}
+.src b{color:var(--ink);font-weight:600}
+.compose{background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-md);padding:12px;font-size:13px;line-height:1.6}
+.uline{text-decoration:underline wavy var(--accent-focus);text-underline-offset:3px}
+.found{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+.found .it{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--surface-raised);border-radius:var(--radius-md);padding:8px 12px;font-size:12px}
+.found .it span{color:#cfcfcf}
+.btn.xs{padding:5px 12px;font-size:12px}
+.cal-e{height:120px;border:1px solid var(--hairline);border-radius:var(--radius-md);background:var(--surface-list);background-image:repeating-linear-gradient(180deg,transparent 0 29px,var(--hairline) 29px 30px);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--ink-muted)}
+.evl{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.evl li{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px}
+.evl small{display:block;color:var(--ink-muted);font-size:12px}
+.stage-in{position:relative;background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden;min-height:300px}
+.stage-in .rows{padding:12px;display:flex;flex-direction:column;gap:6px}
+.dim{position:absolute;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;gap:12px;padding:12px;flex-wrap:wrap}
+.modal-s{background:var(--surface-raised);border-radius:var(--radius-lg);padding:16px;width:150px;text-align:center;font-size:12px}
+.modal-s b{display:block;font-size:13px;margin-bottom:6px}
+.modal-s p{margin:0 0 10px;color:#cfcfcf}
+.modal-s .btns{justify-content:center}
+.fcard{position:absolute;right:12px;bottom:12px;width:min(260px,calc(100% - 24px));background:var(--surface-raised);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:14px;font-size:13px}
+.fcard[hidden]{display:none}
+.fcard .x{position:absolute;top:6px;right:8px;background:transparent;border:0;color:var(--ink-muted);font-size:16px;cursor:pointer;padding:4px 8px}
+.fcard b{display:block;margin-bottom:4px;padding-right:20px}
+.fcard p{margin:0 0 10px;color:#cfcfcf;font-size:12px}
+.fcard textarea{min-height:60px;margin-bottom:8px}
+.lockm{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--ink-muted);border:1px solid var(--hairline);border-radius:var(--radius-pill);padding:2px 8px;white-space:nowrap}
+.ex{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--hairline);font-size:13px}
+.ex:first-of-type{border-top:0;padding-top:0}
+.ex small{display:block;color:var(--ink-muted);font-size:12px}
+.tg{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--hairline);font-size:13px}
+.tg:first-of-type{border-top:0;padding-top:0}
+.tg small{display:block;color:var(--ink-muted);font-size:12px}
+.btn.o{background:transparent;border:1px solid var(--hairline);color:var(--ink)}
+.dl{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-direction:column;gap:8px;font-size:13px;text-align:left}
+.dl li{display:flex;gap:10px}
+.dl li b{flex:none;width:64px;color:var(--ink-muted);font-weight:500}
+
+/* ---------- R1 to R4 ---------- */
+.flow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;font-size:12px}
+.flow-n{background:var(--surface-raised);border-radius:var(--radius-pill);padding:5px 12px;font-weight:600}
+.flow-m{color:var(--accent-focus);font-weight:500}
+.flow-a{width:22px;height:1.5px;background:var(--ink-muted);position:relative;display:inline-block}
+.flow-a::after{content:"";position:absolute;right:0;top:-3px;border-left:6px solid var(--ink-muted);border-top:4px solid transparent;border-bottom:4px solid transparent}
+
+.phone{width:min(260px,100%);margin:0 auto;border:1px solid #3a3a3a;border-radius:32px;padding:14px 12px 18px;background:#0e0e0e}
+.phone .clock{text-align:center;font-size:44px;font-weight:600;line-height:1.1;margin:10px 0 2px;font-variant-numeric:tabular-nums}
+.phone .date{text-align:center;font-size:12px;color:var(--ink-muted);margin-bottom:16px}
+.notif{background:var(--surface-raised);border-radius:var(--radius-lg);padding:10px 12px;font-size:12px;margin-top:8px}
+.notif .h{display:flex;justify-content:space-between;color:var(--ink-muted);font-size:11px;margin-bottom:2px}
+.notif b{display:block;font-size:13px}
+.widget{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:14px;font-size:12px}
+.widget b{display:block;font-size:13px;margin-bottom:6px}
+.widget .l{display:flex;justify-content:space-between;padding:5px 0;border-top:1px solid var(--hairline);color:#cfcfcf}
+.appicon{display:inline-grid;place-items:center;position:relative;width:48px;height:48px;border-radius:12px;background:var(--surface-inverse);color:var(--ink-inverse);font-weight:700}
+.appicon i{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;border-radius:var(--radius-pill);background:var(--accent-focus);color:var(--ink-inverse);font-size:11px;font-style:normal;display:grid;place-items:center;padding:0 5px;font-weight:700}
+.sel{font:500 13px var(--font);color:var(--ink);background:var(--surface-raised);border:1px solid var(--hairline);border-radius:var(--radius-md);padding:8px 10px}
+.inp{font:400 13px var(--font);color:var(--ink);background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-md);padding:8px 10px;width:100%}
+.gm{background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden}
+.gm .r{display:flex;align-items:center;gap:10px;padding:9px 12px;border-top:1px solid var(--hairline);font-size:12px}
+.gm .r:first-child{border-top:0}
+.gm .r b{width:84px;flex:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gm .r span.t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink-muted)}
+.gm .r.gone{display:none}
+.gm .hd{padding:8px 12px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted);background:var(--surface-raised)}
+.lab{font-size:11px;font-weight:500;border-radius:var(--radius-sm);padding:1px 7px;white-space:nowrap}
+.lab.f{color:var(--accent-focus);background:var(--focus-bg)}
+.lab.d{color:var(--accent-feed);background:var(--feed-bg)}
+.lab.n{color:var(--ink-muted);background:#2a2a2a}
+.vip{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+.vip span{display:inline-flex;align-items:center;gap:6px;background:var(--surface-raised);border-radius:var(--radius-pill);padding:5px 6px 5px 12px;font-size:12px}
+.vip button{background:transparent;border:0;color:var(--ink-muted);cursor:pointer;font-size:14px;line-height:1;padding:0 4px}
+.undo{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface-raised);border-radius:var(--radius-md);padding:10px 12px;font-size:13px;margin-top:12px}
+.undo[hidden]{display:none}
+.big-n{font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.stat4 div{background:var(--surface-raised);border-radius:var(--radius-md);padding:10px 12px}
+.stat4 span{font-size:12px;color:var(--ink-muted)}
+.empty-p{border:1px dashed var(--hairline);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;color:var(--ink-muted);font-size:13px}
+
+/* ---------- R5 to R8 ---------- */
+.fc{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:18px;min-height:190px;display:flex;flex-direction:column;gap:10px}
+.fc .from{font-size:12px;color:var(--ink-muted)}
+.fc .sum{font-size:15px;font-weight:600;line-height:1.4}
+.fc .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.pbar{height:6px;border-radius:var(--radius-pill);background:#333;overflow:hidden}
+.pbar i{display:block;height:100%;width:0;background:var(--accent-feed);border-radius:var(--radius-pill);transition:width .2s}
+.fmeta{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-muted);margin:8px 0 10px}
+.clear{text-align:center;padding:28px 16px}
+.clear .big-n{color:var(--accent-done)}
+.nudge{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:14px 16px;font-size:13px}
+.nudge b{display:block;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chipb{font:500 12px var(--font);color:var(--ink);background:var(--surface-raised);border:1px solid var(--hairline);border-radius:var(--radius-pill);padding:7px 14px;cursor:pointer}
+.chipb[aria-pressed="true"]{border-color:var(--accent-ai);background:var(--surface-selected)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tags span{font-size:12px;background:var(--surface-raised);border-radius:var(--radius-pill);padding:3px 10px}
+.price{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.price small{font-size:13px;font-weight:400;color:var(--ink-muted)}
+.mlist{list-style:none;margin:0;padding:6px;background:var(--surface-raised);border:1px solid var(--hairline);border-radius:var(--radius-md);font-size:13px;width:min(240px,100%)}
+.mlist li{padding:7px 10px;border-radius:var(--radius-sm);color:#cfcfcf}
+.mlist li.hl{background:var(--surface-selected);color:var(--ink);font-weight:600}
+.mlist hr{border:0;border-top:1px solid var(--hairline);margin:4px 0}
+.hdrmail{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:14px 16px;font-size:13px}
+.hdrmail b{display:block;font-size:15px;margin-bottom:2px}
+.cform{display:grid;gap:8px;margin-top:10px;font-size:12px}
+.cform[hidden]{display:none}
+.cform .rw{display:grid;grid-template-columns:64px minmax(0,1fr);gap:8px;align-items:center}
+.cform label{color:var(--ink-muted)}
+.addbanner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--surface-selected);border-radius:var(--radius-md);padding:10px 14px;font-size:13px}
+
+/* ---------- R8: full flow ---------- */
+.fsteps{list-style:none;margin:0 0 12px;padding:0;display:flex;gap:6px;flex-wrap:wrap}
+.fsteps button{font:500 12px var(--font);color:var(--ink-muted);background:var(--surface-raised);border:1px solid var(--hairline);border-radius:var(--radius-pill);padding:6px 12px;cursor:pointer}
+.fsteps button[aria-current="step"]{color:var(--ink);border-color:var(--accent-ai);background:var(--surface-selected)}
+.fstage .fs[hidden]{display:none}
+.fs-n{margin-top:10px}
+.ring{display:inline-block;border-radius:var(--radius-pill);box-shadow:0 0 0 2px var(--accent-ai);padding:0}
+.cal4{background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden}
+.cal4-h{padding:8px 14px;font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--accent-focus);border-bottom:1px solid var(--hairline)}
+.cal4-g{position:relative;height:170px;background-image:repeating-linear-gradient(180deg,transparent 0 39px,var(--hairline) 39px 40px)}
+.cal4-g .hr{position:absolute;left:10px;font-size:11px;color:var(--ink-muted)}
+.cal4-e{position:absolute;left:64px;right:12px;top:100px;height:52px;background:var(--surface-selected);border:1px solid var(--hairline);border-radius:var(--radius-md);padding:6px 10px;display:flex;flex-direction:column;gap:2px}
+.cal4-e b{font-size:12px}.cal4-e span{font-size:11px;color:var(--ink-muted)}
+/* ---------- R7: mobile layouts ---------- */
+.mph{position:relative;width:min(310px,100%);height:640px;margin:0 auto;background:var(--surface-list);border:1px solid #3a3a3a;border-radius:36px;overflow:hidden;display:flex;flex-direction:column}
+.mph-top{display:flex;justify-content:space-between;align-items:center;padding:18px 18px 6px}
+.mph-top h4{margin:0;font-size:26px;font-weight:700;display:flex;align-items:center;gap:4px}
+.mph-top h4 span{font-size:14px;color:var(--ink-muted)}
+.mph-ic{display:flex;gap:2px;background:#101010;border-radius:var(--radius-pill);padding:6px 8px}
+.mph-ic svg,.mph-bar svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin:0 6px}
+.mph-body{flex:1;min-height:0;overflow:hidden;padding:0 18px}
+.mph-sec{font-size:13px;font-weight:500;color:var(--ink-muted);margin:12px 0 6px}
+.mrow{display:grid;grid-template-columns:30px minmax(0,1fr) auto;column-gap:10px;row-gap:2px;align-items:center;padding:8px 0}
+.mav{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:10px;font-weight:600;color:#fff;grid-row:1 / span 2}
+.mrow .nm{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.mrow .tm{font-size:12px;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.mrow .sm{font-size:12px;font-style:italic;color:var(--ink-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.mrow .pl{justify-self:end;font-size:11px;font-weight:500;color:var(--accent-feed);background:var(--feed-bg);border-radius:var(--radius-sm);padding:3px 8px}
+.mrow.rd .nm{color:var(--ink-muted);font-weight:500}
+.mrow.rd .sm{opacity:.8}
+.mph-bar{position:absolute;left:14px;right:14px;bottom:14px;display:flex;gap:8px;align-items:center}
+.mph-bar .b{background:#0e0e0e;border:1px solid var(--hairline);border-radius:var(--radius-pill);height:44px;display:flex;align-items:center;justify-content:center}
+.mph-bar .b.s{flex:1;gap:6px;font-size:13px;color:#cfcfcf}
+.mph-bar .b.i{width:44px}
+.mph-sw{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:6px 0 4px;padding:8px 12px;background:var(--surface-raised);border-radius:var(--radius-md);font-size:12px}
+.mph-sw small{display:block;color:var(--ink-muted);font-size:11px}
+.mcard{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:16px;margin-top:10px;display:flex;flex-direction:column;gap:12px;min-height:250px}
+.mcard .top{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600}
+.mcard .top small{margin-left:auto;font-weight:400;color:var(--ink-muted)}
+.mcard .sum{font-size:17px;line-height:1.4;font-weight:600}
+.mcard .acts{display:flex;gap:8px;margin-top:auto}
+.mcount{font-size:12px;color:var(--ink-muted);text-align:center;margin-top:10px}
+
+
 @media (max-width:860px){
   .stage{grid-template-columns:minmax(0,1fr)}
   .brief{grid-template-columns:minmax(0,1fr)}
@@ -139,24 +424,24 @@ button.sw{cursor:pointer}
     <span class="brand">Dove mockups</span>
     <div class="grp"><span class="grp-l">Activation</span>
       <a class="l" href="#a1" title="Defaults undercut the core promise">A1</a>
-      <a class="l todo" href="#a2" title="Trial is short, card-gated and inconsistent">A2</a>
-      <a class="l todo" href="#a3" title="Free tier never shows the value">A3</a>
-      <a class="l todo" href="#a4" title="Teach Dove is basic">A4</a>
-      <a class="l todo" href="#a5" title="Entry friction on the web app">A5</a>
-      <a class="l todo" href="#a6" title="Accuracy and promise gaps">A6</a>
-      <a class="l todo" href="#a7" title="Review pop-ups in the first session">A7</a>
-      <a class="l todo" href="#a8" title="Privacy notice">A8</a>
+      <a class="l" href="#a2" title="Trial is short, card-gated and inconsistent">A2</a>
+      <a class="l" href="#a3" title="Free tier never shows the value">A3</a>
+      <a class="l" href="#a4" title="Teach Dove is basic">A4</a>
+      <a class="l" href="#a5" title="Entry friction on the web app">A5</a>
+      <a class="l" href="#a6" title="Accuracy and promise gaps">A6</a>
+      <a class="l" href="#a7" title="Review pop-ups in the first session">A7</a>
+      <a class="l" href="#a8" title="Privacy notice">A8</a>
     </div>
     <span class="sep"></span>
     <div class="grp"><span class="grp-l">Retention</span>
-      <a class="l todo" href="#r1" title="No habit trigger outside the app">R1</a>
-      <a class="l todo" href="#r2" title="Dove's work does not carry over">R2</a>
-      <a class="l todo" href="#r3" title="A missed important email">R3</a>
-      <a class="l todo" href="#r4" title="Value is never shown back">R4</a>
-      <a class="l todo" href="#r5" title="Feed is underused">R5</a>
-      <a class="l todo" href="#r6" title="Price vs. built-in alternatives">R6</a>
-      <a class="l todo" href="#r7" title="Habit surface missing on mobile">R7</a>
-      <a class="l todo" href="#r8" title="Add to calendar from the inbox">R8</a>
+      <a class="l" href="#r1" title="No habit trigger outside the app">R1</a>
+      <a class="l" href="#r2" title="Dove's work does not carry over">R2</a>
+      <a class="l" href="#r3" title="A missed important email">R3</a>
+      <a class="l" href="#r4" title="Value is never shown back">R4</a>
+      <a class="l" href="#r5" title="Feed is underused">R5</a>
+      <a class="l" href="#r6" title="Price vs. built-in alternatives">R6</a>
+      <a class="l" href="#r7" title="Habit surface missing on mobile">R7</a>
+      <a class="l" href="#r8" title="Add to calendar from the inbox">R8</a>
     </div>
   </div>
 </nav>
@@ -246,23 +531,593 @@ button.sw{cursor:pointer}
   </section>
 
   <!-- ================= placeholders ================= -->
-  <section class="item" id="a2"><div class="item-h"><span class="tag">A2</span><h2>The trial is short, card-gated and inconsistent</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="a3"><div class="item-h"><span class="tag">A3</span><h2>The free tier never demonstrates the product's true value</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="a4"><div class="item-h"><span class="tag">A4</span><h2>The Teach Dove feature is semi-functional and basic</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="a5"><div class="item-h"><span class="tag">A5</span><h2>Entry friction on the web app</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="a6"><div class="item-h"><span class="tag">A6</span><h2>Accuracy and promise gaps on first login</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="a7"><div class="item-h"><span class="tag">A7</span><h2>Review pop-ups in the first session</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="a8"><div class="item-h"><span class="tag">A8</span><h2>Privacy notice</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <!-- ================= A2 ================= -->
+  <section class="item" id="a2" aria-labelledby="a2-t">
+    <div class="item-h"><span class="tag">A2</span><h2 id="a2-t">The trial is short, card-gated and inconsistent</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Seven days with a card upfront and billing from day 8. The sidebar says the Pro trial is running, yet the Upgrade sheet offers "Start your free trial for 7 days, $0.00 due today".</p></div>
+      <div><h3>Why it hurts</h3><p>One work cycle is too short for the classifier to learn. A day-8 charge invites "forgot to cancel" refunds, and mixed copy leaves the user unsure whether they are on the trial.</p></div>
+      <div><h3>Fix</h3><p>Make the sheet state-aware, start the clock on activation, send a day-5 summary with one-tap cancel, and test a no-card trial against card-upfront.</p></div>
+    </div>
+
+    <div class="stage">
+      <!-- BEFORE -->
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="stack">
+          <div class="side-trial">
+            <p><b>Pro</b> trial ends in 7 days<br><span>Then 10 AI actions a day</span></p>
+            <button class="btn p" type="button" tabindex="-1">Upgrade</button>
+          </div>
+          <div class="sheet">
+            <span class="kicker">Dove Pro</span>
+            <h4>Start your free trial for 7 days</h4>
+            <p class="big">$0.00 due today</p>
+            <button class="btn p" type="button" tabindex="-1">Start free trial</button>
+            <p class="fine">Card required. Then $19.99 per month.</p>
+          </div>
+          <p class="note"><span class="flag">Mismatch</span> The sidebar says the trial is already running. Tapping Upgrade offers a new one.</p>
+        </div>
+        <p class="cap">Sidebar block and the Upgrade sheet it opens, as found. Values shown are stand-ins.</p>
+      </div>
+
+      <!-- AFTER -->
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Trial states">
+          <button class="tab" role="tab" id="a2-tab1" aria-selected="true" aria-controls="a2-p1" type="button">During trial</button>
+          <button class="tab" role="tab" id="a2-tab2" aria-selected="false" aria-controls="a2-p2" type="button">Day 5 email</button>
+          <button class="tab" role="tab" id="a2-tab3" aria-selected="false" aria-controls="a2-p3" type="button">After trial</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="a2-p1" aria-labelledby="a2-tab1">
+          <div class="sheet">
+            <span class="kicker">Dove Pro</span>
+            <h4>Pro trial, 5 days left</h4>
+            <div class="prog" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="2" aria-label="Trial progress"><i style="width:28.5%"></i></div>
+            <div class="prog-l"><span>Day 2 of 7</span><span>Billing starts Nov 13</span></div>
+            <ul class="steps" aria-label="Trial clock">
+              <li class="done"><span class="ck">✓</span>Connect your inbox</li>
+              <li class="done"><span class="ck">✓</span>Sort your first Focus emails</li>
+              <li><span class="ck"></span>Make one correction with Teach Dove</li>
+            </ul>
+            <p class="fine" style="text-align:left">The 7 days start once the last step is done. Inboxes with a high volume of mail get 14 days.</p>
+            <button class="btn p" type="button" style="margin-top:14px">Keep Pro</button>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="a2-p2" aria-labelledby="a2-tab2" hidden>
+          <div class="mail">
+            <div class="mail-h"><b>Your Dove trial ends in 2 days</b>From Dove · Day 5</div>
+            <div class="mail-b">
+              <p>Here is what Dove did for you so far.</p>
+              <div class="stats">
+                <div><b>312</b><span>emails cleared</span></div>
+                <div><b>14</b><span>flagged as needing you</span></div>
+              </div>
+              <p>Keep Pro to hold on to Today, Tasks, Memory and unlimited AI. If you do nothing, billing starts Nov 13.</p>
+              <div class="btns"><button class="btn p" type="button">Keep Pro</button><button class="btn s" type="button">Cancel in one tap</button></div>
+              <p class="fine" style="margin:12px 0 0;font-size:12px;color:var(--ink-muted)">Test variant: no card needed. You move to Free unless you choose Pro.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="a2-p3" aria-labelledby="a2-tab3" hidden>
+          <div class="sheet">
+            <span class="kicker">Trial ended</span>
+            <h4>Here is what changes</h4>
+            <div class="two">
+              <div><h5>You keep</h5><ul><li>Smart Inbox</li><li>Focus, Feed and Noise</li><li>A basic Today list</li><li>Focus-only notifications</li></ul></div>
+              <div class="pro"><h5>Moves to Pro</h5><ul><li>Memory</li><li>Custom Rules</li><li>Tasks and Briefs</li><li>Unlimited AI</li></ul></div>
+            </div>
+            <div class="btns" style="justify-content:center"><button class="btn p" type="button">Keep Pro</button><button class="btn s" type="button">Continue on Free</button></div>
+            <p class="meter">On Free: 7 of 10 AI actions left today</p>
+          </div>
+        </div>
+        <p class="cap">The sheet reads the user's state: running trial, day-5 summary, then a clear before and after. Dates and counts are stand-ins.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ================= A3 ================= -->
+  <section class="item" id="a3" aria-labelledby="a3-t">
+    <div class="item-h"><span class="tag">A3</span><h2 id="a3-t">The free tier never demonstrates the product's true value</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Free is 10 AI actions a day, shared across Compose, Wingman, Summaries and Ask. Today, Tasks, Memory, Rules, Smart Labels and Smart Notifications are Pro-only.</p></div>
+      <div><h3>Why it hurts</h3><p>Sorting is the core habit and AI actions are a bonus. On day 8 the user loses the views that set Dove apart, hits the cap quickly, and has little reason to come back.</p></div>
+      <div><h3>Fix</h3><p>Keep a paid boundary but move it. Free keeps the inbox, sorting, a basic Today list and Focus-only notifications. Add a usage meter and a downgrade preview.</p></div>
+    </div>
+
+    <div class="stage">
+      <!-- BEFORE -->
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="stack">
+          <table class="cmp">
+            <thead><tr><th scope="col">Feature</th><th scope="col" class="c">Free</th><th scope="col" class="c">Pro</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Smart Inbox, Focus, Feed, Noise</th><td class="c y">✓</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">AI actions</th><td class="c">10 a day</td><td class="c">Unlimited</td></tr>
+              <tr><th scope="row">Today</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Tasks</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Memory</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Custom Rules</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Smart Labels</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Smart Notifications</th><td class="c n">–</td><td class="c y">✓</td></tr>
+            </tbody>
+          </table>
+          <div class="askbar out">
+            <div class="in">You have used your 10 AI actions today.</div>
+            <p class="m"><span class="flag">Hard stop</span> No count before it, no explanation of what still works.</p>
+          </div>
+        </div>
+        <p class="cap">Plan table follows the pricing page. The hard-stop state is illustrative: I did not reach the cap, so its wording is a stand-in.</p>
+      </div>
+
+      <!-- AFTER -->
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Free tier changes">
+          <button class="tab" role="tab" id="a3-tab1" aria-selected="true" aria-controls="a3-p1" type="button">Plan split</button>
+          <button class="tab" role="tab" id="a3-tab2" aria-selected="false" aria-controls="a3-p2" type="button">Usage meter</button>
+          <button class="tab" role="tab" id="a3-tab3" aria-selected="false" aria-controls="a3-p3" type="button">Downgrade preview</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="a3-p1" aria-labelledby="a3-tab1">
+          <table class="cmp">
+            <thead><tr><th scope="col">Feature</th><th scope="col" class="c">Free</th><th scope="col" class="c">Pro</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Smart Inbox, Focus, Feed, Noise</th><td class="c y">✓</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Basic Today list <span class="flag ok mv">now free</span></th><td class="c y">✓</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Focus-only notifications <span class="flag ok mv">now free</span></th><td class="c y">✓</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Memory</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Custom Rules</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">Tasks and Briefs</th><td class="c n">–</td><td class="c y">✓</td></tr>
+              <tr><th scope="row">AI actions</th><td class="c">10 a day</td><td class="c">Unlimited</td></tr>
+            </tbody>
+          </table>
+          <p class="cap">The paid line moves up: the daily habit stays free, and the power features stay Pro.</p>
+        </div>
+
+        <div class="panel" role="tabpanel" id="a3-p2" aria-labelledby="a3-tab2" hidden>
+          <div class="askbar" id="a3-bar">
+            <div class="in" id="a3-input">Ask Dove, or search your mail</div>
+            <div class="meter-row"><div class="segs" id="a3-segs" aria-hidden="true"></div><span class="lbl" id="a3-left" aria-live="polite">7 of 10 AI actions left today</span></div>
+            <p class="m" id="a3-msg"></p>
+          </div>
+          <div class="ctl"><label for="a3-used">Actions used today</label><input type="range" id="a3-used" min="0" max="10" step="1" value="3"><output id="a3-usedout" for="a3-used">3</output></div>
+          <p class="cap">Drag the slider to see each state. The cap becomes a visible choice before it becomes a wall.</p>
+        </div>
+
+        <div class="panel" role="tabpanel" id="a3-p3" aria-labelledby="a3-tab3" hidden>
+          <div class="sheet">
+            <span class="kicker">Final trial email</span>
+            <h4>Here is what you keep on Free</h4>
+            <div class="two">
+              <div><h5>You keep</h5><ul><li>Smart Inbox</li><li>Focus, Feed and Noise</li><li>A basic Today list</li><li>Focus-only notifications</li></ul></div>
+              <div class="pro"><h5>Moves to Pro</h5><ul><li>Memory</li><li>Custom Rules</li><li>Tasks and Briefs</li><li>Unlimited AI</li></ul></div>
+            </div>
+            <ul class="use-list" aria-label="Your use this trial">
+              <li>Today opened<span>6 times</span></li>
+              <li>AI actions on your busiest day<span>23</span></li>
+            </ul>
+            <div class="btns" style="justify-content:center;margin-top:14px"><button class="btn p" type="button">Keep Pro</button><button class="btn s" type="button">Continue on Free</button></div>
+          </div>
+          <p class="cap">Shown in the last trial email and as a pop-up on the final day. The use figures are stand-ins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="a4" aria-labelledby="a4-t">
+    <div class="item-h"><span class="tag">A4</span><h2 id="a4-t">The Teach Dove feature is semi-functional and basic</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Teach Dove is mostly a sender-to-category rule, reachable only by right-clicking an email that is already misplaced.</p></div>
+      <div><h3>Why it hurts</h3><p>The same sender sends mail of very different importance. A rule that is too broad buries mail in Noise, and one that is too narrow leaves Focus cluttered.</p></div>
+      <div><h3>Fix</h3><p>Rules beyond the sender, plain-language rules with a preview, a one-tap "Wrong?" on the row, a readable Rules page and a safety net.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="win"><div class="win-bar"><i></i><i></i><i></i></div>
+<div class="set"><div class="set-rail" aria-hidden="true">
+<div class="set-it">Preferences</div><div class="set-it">Notifications</div><div class="set-it">Swipe actions</div><div class="set-it">Accounts</div><div class="set-it">Signatures</div><div class="set-it on">Teach Dove</div></div>
+<div class="set-main"><p class="set-t">Teach Dove</p>
+<div style="font-size:14px;font-weight:600;margin-bottom:2px">Classification rules</div>
+<p class="set-t" style="margin-bottom:14px">Help Dove place emails where they belong.</p>
+<div class="fld"><label>Emails about</label><div class="box"><span>All</span></div></div>
+<div class="fld"><label>From</label><div class="box"><span>notifications@joinsuperset.com</span><i>⌄</i></div></div>
+<div class="fld"><label>Go to</label><div class="box"><span>Focus</span><i>⌄</i></div></div>
+<p class="note"><span class="flag">Sender-first</span> One address, one destination. "Emails about" is the only field beyond the sender.</p>
+</div></div></div>
+        <p class="cap">Settings, Teach Dove, as in the screenshot. Sender and destination are the main controls.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Teach Dove changes"><button class="tab" role="tab" id="a4-tab1" aria-selected="true" aria-controls="a4-p1" type="button">Plain-language rule</button><button class="tab" role="tab" id="a4-tab2" aria-selected="false" aria-controls="a4-p2" type="button">Wrong? on a row</button><button class="tab" role="tab" id="a4-tab3" aria-selected="false" aria-controls="a4-p3" type="button">Rules page</button></div><div class="panel" role="tabpanel" id="a4-p1" aria-labelledby="a4-tab1"><div class="sheet-f">
+<label for="a4-ta" style="font-size:12px;font-weight:600;color:var(--ink-muted);display:block;margin-bottom:6px">Tell Dove what matters</label>
+<textarea class="ta" id="a4-ta">Anything with an application deadline is Focus; reply threads about scheduling are Feed.</textarea>
+<div class="rule"><span class="pill-f">Focus</span><span><b>Mentions an application deadline</b><br><small style="color:var(--ink-muted)">Any sender, any Area</small></span></div>
+<div class="rule"><span class="pill-d">Feed</span><span><b>Reply thread about scheduling</b><br><small style="color:var(--ink-muted)">Replies only, not first messages</small></span></div>
+<p class="impact">This would have changed 14 emails in the last 30 days</p>
+<ul class="mini"><li><span>Application closes Nov 8, internship portal</span><span>Feed → Focus</span></li><li><span>Re: Can we move the call to Thursday?</span><span>Focus → Feed</span></li><li><span>Final reminder: forms due Friday</span><span>Noise → Focus</span></li><li><span>Re: Re: Meeting time</span><span>Focus → Feed</span></li></ul>
+<div class="btns" style="margin-top:14px"><button class="btn p" type="button" id="a4-save">Save rules</button><button class="btn s" type="button">Edit</button></div>
+<p class="note" id="a4-saved" hidden style="margin-top:10px">Saved. You can undo this for 7 days from the Rules page.</p>
+</div></div><div class="panel" role="tabpanel" id="a4-p2" aria-labelledby="a4-tab2" hidden><div class="erow"><span class="s">Placements</span><span class="j">Company announcement: roles open until Nov 8</span><span class="pill-d">Feed</span><button class="wrong" id="a4-wrong" type="button" aria-expanded="false" aria-controls="a4-menu">Wrong?</button></div>
+<div class="menu" id="a4-menu" hidden>
+<button type="button" data-msg="Got it: all mail from this sender goes to Focus."><b>Always for this sender</b><small>Every email from placements@</small></button>
+<button type="button" data-msg="Got it: announcements from this sender go to Focus."><b>Just this kind of email</b><small>Announcements from this sender</small></button>
+<button type="button" data-msg="Moved to Focus. Dove will not change anything else."><b>Just this once</b><small>No rule is created</small></button></div>
+<div class="toast" id="a4-toast" hidden><span class="sp">✦</span><span id="a4-toast-t"></span></div>
+<div class="why"><b>Why Focus?</b> Rule "Mentions an application deadline". Open the Rules page to change it.</div></div><div class="panel" role="tabpanel" id="a4-p3" aria-labelledby="a4-tab3" hidden><div class="sheet-f">
+<div class="rrow"><div><b>Mentions an application deadline → Focus</b><small>Hit 9 times · last triggered today</small></div><button class="sw on" type="button" role="switch" aria-checked="true" aria-label="Rule on"></button></div>
+<div class="rrow"><div><b>Reply thread about scheduling → Feed</b><small>Hit 5 times · last triggered yesterday</small></div><button class="sw on" type="button" role="switch" aria-checked="true" aria-label="Rule on"></button></div>
+<div class="rrow"><div><b>placements@ announcements → Focus</b><small>Hit 3 times · last triggered 4 days ago</small></div><button class="sw on" type="button" role="switch" aria-checked="true" aria-label="Rule on"></button></div>
+<div class="btns" style="margin-top:12px"><button class="btn s" type="button">Undo last change</button><span class="note" style="align-self:center">6 days left to undo</span></div>
+</div></div>
+        <p class="cap">Subjects, counts and senders are stand-ins. The preview shows what a rule would have changed before it is saved.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="a5" aria-labelledby="a5-t">
+    <div class="item-h"><span class="tag">A5</span><h2 id="a5-t">Entry friction on the web app</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>A second Dove tab shows a black screen, "Dove is open in another tab or window", with a Use Dove here button.</p></div>
+      <div><h3>Why it hurts</h3><p>A single-session lock adds friction for anyone who reopens mail in a new tab out of habit, and it hides the product at the moment of return.</p></div>
+      <div><h3>Fix</h3><p>Remove the single-session limit. If one has to stay, show a banner over a working inbox instead of a black screen.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="black"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8c3-3 8-3 12 0M5 12c3-3 8-3 12 0M9 16c2-1 4-1 6 0"/></svg>
+<p>Dove is open in another tab or window.</p><button class="btn p" type="button" tabindex="-1">Use Dove here</button></div>
+        <p class="cap">The lock screen, as found.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Two-tab options"><button class="tab" role="tab" id="a5-tab1" aria-selected="true" aria-controls="a5-p1" type="button">Allow many tabs</button><button class="tab" role="tab" id="a5-tab2" aria-selected="false" aria-controls="a5-p2" type="button">Soft notice instead</button></div><div class="panel" role="tabpanel" id="a5-p1" aria-labelledby="a5-tab1"><div class="btab"><div class="btab-bar"><span class="bt">Gmail</span><span class="bt on">Dove</span><span class="bt">Dove</span></div>
+<div class="btab-b"><div class="sk"><i></i><b>Placements</b><span>Company announcement: roles open until Nov 8</span></div><div class="sk"><i></i><b>Superset</b><span>Open for application, closes Nov 6</span></div><div class="sk"><i></i><b>Alumni Relations</b><span>The Yearbook Portal 2026 is live</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px"><span class="sync">Synced with your other Dove tab</span><span class="note">Drafts and read state stay shared</span></div></div></div>
+<div class="warn-box"><b>Needs an engineering check.</b> Two tabs mean two clients writing at once. Drafts, read state and notifications need one owner tab or a shared state.</div></div><div class="panel" role="tabpanel" id="a5-p2" aria-labelledby="a5-tab2" hidden><div class="btab"><div class="btab-bar"><span class="bt">Gmail</span><span class="bt on">Dove</span><span class="bt">Dove</span></div>
+<div class="banner"><span>Dove is also open in another tab.</span><span class="btns"><button class="btn s" type="button">Go to that tab</button><button class="btn p" type="button">Keep both</button></span></div>
+<div class="btab-b"><div class="sk"><i></i><b>Placements</b><span>Company announcement: roles open until Nov 8</span></div><div class="sk"><i></i><b>Superset</b><span>Open for application, closes Nov 6</span></div></div></div>
+<div class="warn-box">If a limit has to stay, replace the black screen with a banner. The inbox is readable at once and the user chooses.</div></div>
+        <p class="cap">The assignment notes an engineering reason may sit behind the limit. This mockup does not account for it.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="a6" aria-labelledby="a6-t">
+    <div class="item-h"><span class="tag">A6</span><h2 id="a6-t">Accuracy and promise gaps on first login</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>A "Needs you" chip said 7:00 PM for a role closing at 1:30 PM. Send check did not fire on a sloppy message. The Calendar was empty although Today mentioned a lecture.</p></div>
+      <div><h3>Why it hurts</h3><p>A wrong deadline is the most expensive error Dove can make. Promised features that do nothing, or never explain why, cost trust in week one.</p></div>
+      <div><h3>Fix</h3><p>Show the deadline from the email and say where it came from. Show Send check once as an example, or say it is off. Prompt to connect a calendar and offer events Dove found.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="card"><h5>Needs you</h5><div class="entry"><span class="avatar"></span><div><b>HSBC's Intern Markets role is open on Superset</b><br><span style="color:var(--ink-muted)">Applications close Nov 6 at 1:30 PM.</span><br><span class="chip-t">by 7:00 PM</span></div></div></div>
+<div class="card"><h5>Composer</h5><div class="compose">hey can u send me the the report by friday thanks</div><div class="btns" style="margin-top:10px"><button class="btn p xs" type="button" tabindex="-1">Send</button><span class="note" style="align-self:center">Sent at once. No warning.</span></div></div>
+<div class="card"><h5>Calendar</h5><div class="cal-e">No events</div><p class="note" style="margin-top:8px">Today mentions a 5:00 PM lecture. The grid is empty and offers nothing to do.</p></div>
+        <p class="cap">Three first-login moments, as found. The text is paraphrased from the test account.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Accuracy fixes"><button class="tab" role="tab" id="a6-tab1" aria-selected="true" aria-controls="a6-p1" type="button">Deadline source</button><button class="tab" role="tab" id="a6-tab2" aria-selected="false" aria-controls="a6-p2" type="button">Send check</button><button class="tab" role="tab" id="a6-tab3" aria-selected="false" aria-controls="a6-p3" type="button">Empty calendar</button></div><div class="panel" role="tabpanel" id="a6-p1" aria-labelledby="a6-tab1"><div class="card"><h5>Needs you</h5><div class="entry"><span class="avatar"></span><div><b>HSBC's Intern Markets role is open on Superset</b><br><span class="chip-t">by Today 1:30 PM</span>
+<div class="src"><b>From the email:</b> "applications close Nov 6 at 1:30 PM". The task's stored time of 7:00 PM disagrees, so Dove shows the email's.</div>
+<div class="btns" style="margin-top:10px"><button class="btn s xs" type="button">Show both times</button><button class="btn s xs" type="button">Open email</button></div></div></div></div></div><div class="panel" role="tabpanel" id="a6-p2" aria-labelledby="a6-tab2" hidden><div class="card"><h5>New message</h5><div class="compose">hey can u send me <span class="uline" id="a6-dup">the the</span> <span class="uline">report</span> by friday thanks</div>
+<div class="found"><div class="lbl-row" style="font-size:12px;font-weight:600" id="a6-count">Send check found 2 things</div>
+<div class="it"><span>Repeated word: "the the"</span><button class="btn s xs" type="button" id="a6-fix">Fix</button></div>
+<div class="it"><span>Which report? Add a name or a link</span><button class="btn s xs" type="button">Add detail</button></div></div>
+<div class="btns" style="margin-top:12px"><button class="btn p xs" type="button">Send anyway</button><button class="btn s xs" type="button">Review</button></div>
+<p class="note" style="margin-top:10px">If Send check is off, the composer says so: "Send check is off. Turn on".</p></div></div><div class="panel" role="tabpanel" id="a6-p3" aria-labelledby="a6-tab3" hidden><div class="card"><h5>Calendar</h5><div class="cal-e" style="flex-direction:column;gap:10px;height:auto;padding:18px"><span>Your calendar is empty.</span><button class="btn p xs" type="button">Connect Google Calendar</button></div>
+<ul class="evl" aria-label="Events Dove found in your mail"><li><span>MPBA lecture<small>Today, 5:00 PM · from Today summary</small></span><button class="btn s xs" type="button">Add to calendar</button></li>
+<li><span>Class in Room 6158<small>Wednesday · from your mail</small></span><button class="btn s xs" type="button">Add to calendar</button></li></ul></div></div>
+        <p class="cap">Subjects, times and events are stand-ins.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="a7" aria-labelledby="a7-t">
+    <div class="item-h"><span class="tag">A7</span><h2 id="a7-t">Review pop-ups in the first session</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>After the first Ask Dove answer on day 1, a modal asked "Enjoying Dove?" with only Yes and No. Escape and the backdrop did nothing. No opened a second modal.</p></div>
+      <div><h3>Why it hurts</h3><p>A forced satisfaction prompt before any value is delivered collects "No" answers and irritates people who would have converted.</p></div>
+      <div><h3>Fix</h3><p>Wait for a value milestone such as day 5 or a first cleared Feed. Make the prompt dismissible with "Not now" and show it once.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="stage-in"><div class="rows"><div class="sk"><i></i><b>Placements</b><span>Company announcement: roles open until Nov 8</span></div><div class="sk"><i></i><b>Superset</b><span>Open for application, closes Nov 6</span></div><div class="sk"><i></i><b>Alumni</b><span>The Yearbook Portal 2026 is live</span></div><div class="sk"><i></i><b>Mail Admin</b><span>Revised schedule: two-day hands-on training</span></div></div><div class="dim">
+<div class="modal-s"><b>Enjoying Dove?</b><p>We'd love to know how your experience has been so far.</p><div class="btns"><button class="btn s xs" type="button" tabindex="-1">No</button><button class="btn p xs" type="button" tabindex="-1">Yes</button></div></div>
+<div class="modal-s"><b>Share feedback</b><p>Would you mind giving us some feedback?</p><div class="btns"><button class="btn s xs" type="button" tabindex="-1">No</button><button class="btn p xs" type="button" tabindex="-1">Yes</button></div></div></div></div>
+        <p class="cap">Two blocking modals, as found. The inbox cannot be used until both are answered.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="stage-in"><div class="rows"><div class="sk"><i></i><b>Placements</b><span>Company announcement: roles open until Nov 8</span></div><div class="sk"><i></i><b>Superset</b><span>Open for application, closes Nov 6</span></div><div class="sk"><i></i><b>Alumni</b><span>The Yearbook Portal 2026 is live</span></div><div class="sk"><i></i><b>Mail Admin</b><span>Revised schedule: two-day hands-on training</span></div></div>
+<div class="fcard" id="a7-card" role="dialog" aria-label="Rate Dove"><button class="x" type="button" data-a="x" aria-label="Dismiss">×</button><div id="a7-body"><b>Enjoying Dove?</b><p>You cleared your Feed for the first time. How is it going?</p><div class="btns"><button class="btn p xs" type="button" data-a="yes">Yes</button><button class="btn s xs" type="button" data-a="no">No</button><button class="btn o xs" type="button" data-a="later">Not now</button></div></div></div></div>
+<p class="note" id="a7-note" hidden style="margin-top:10px">Dismissed. Dove will not ask again.</p>
+<div class="btns" style="margin-top:10px"><button class="btn s xs" type="button" id="a7-reset">Reset demo</button></div>
+        <p class="cap">The prompt appears only after a value moment, sits in the corner and can be closed. Try Yes, No, Not now or the close button.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="a8" aria-labelledby="a8-t">
+    <div class="item-h"><span class="tag">A8</span><h2 id="a8-t">Privacy notice</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Every row already had an AI summary, a label and often a deadline chip before I did anything. I found no control for AI reading per email or sender.</p></div>
+      <div><h3>Why it hurts</h3><p>Full-mailbox reading with no notice or control feels like a surprise, and some mail (legal, health, HR) should be left out.</p></div>
+      <div><h3>Fix</h3><p>Say what is read and stored before the first sync, allow exclusions with a visible marker, and add a Privacy page with a toggle per feature and a delete action.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="card"><h5>Inbox on first open</h5><div class="sk"><i></i><b>Placements</b><span>Roles open until Nov 8. Apply before Friday.</span><span class="pill-f">Focus</span></div><div class="sk"><i></i><b>HR Team</b><span>Your appraisal meeting is booked for Monday.</span><span class="pill-d">Feed</span></div><p class="note" style="margin-top:8px"><span class="flag">No notice</span> Summaries and labels already exist. Nothing says what was read.</p></div>
+        <p class="cap">The first inbox view, as found. Rows are stand-ins.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Privacy changes"><button class="tab" role="tab" id="a8-tab1" aria-selected="true" aria-controls="a8-p1" type="button">Before first sync</button><button class="tab" role="tab" id="a8-tab2" aria-selected="false" aria-controls="a8-p2" type="button">Exclusions</button><button class="tab" role="tab" id="a8-tab3" aria-selected="false" aria-controls="a8-p3" type="button">Privacy settings</button></div><div class="panel" role="tabpanel" id="a8-p1" aria-labelledby="a8-tab1"><div class="card" style="text-align:center"><span style="color:var(--accent-ai);font-size:18px">✦</span><h4 style="margin:6px 0 10px;font-size:16px">Before Dove reads your mail</h4>
+<ul class="dl"><li><b>Reads</b><span>Senders, subjects and message text in the accounts you connect, to sort and summarise them.</span></li>
+<li><b>Stores</b><span>Summaries, labels and the rules you teach it.</span></li>
+<li><b>Training</b><span>Your mail is not used to train models. (Wording to be confirmed with Dove's policy.)</span></li>
+<li><b>Delete</b><span>Remove your data any time in Settings, Privacy.</span></li></ul>
+<div class="btns" style="justify-content:center"><button class="btn p" type="button">Continue</button><button class="btn s" type="button">Learn more</button><button class="btn o" type="button">Not now</button></div></div></div><div class="panel" role="tabpanel" id="a8-p2" aria-labelledby="a8-tab2" hidden><div class="card"><h5>Not read by Dove</h5>
+<div class="ex"><div>Sender<small>hr@company.example</small></div><span class="lockm">🔒 Not read</span></div>
+<div class="ex"><div>Domain<small>mybank.example</small></div><span class="lockm">🔒 Not read</span></div>
+<div class="ex"><div>Label<small>Legal</small></div><span class="lockm">🔒 Not read</span></div>
+<div class="ex"><div>Area<small>Health</small></div><span class="lockm">🔒 Not read</span></div>
+<div class="btns" style="margin-top:12px"><button class="btn s xs" type="button">Add exclusion</button></div></div>
+</div><div class="panel" role="tabpanel" id="a8-p3" aria-labelledby="a8-tab3" hidden><div class="card"><h5>Privacy</h5>
+<div class="tg"><div>Summaries<small>One-line summaries on every row</small></div><button class="sw on" data-t type="button" role="switch" aria-checked="true" aria-label="Summaries"></button></div>
+<div class="tg"><div>Smart sorting<small>Focus, Feed and Noise</small></div><button class="sw on" data-t type="button" role="switch" aria-checked="true" aria-label="Smart sorting"></button></div>
+<div class="tg"><div>Ask Dove<small>Questions about your mail</small></div><button class="sw on" data-t type="button" role="switch" aria-checked="true" aria-label="Ask Dove"></button></div>
+<div class="tg"><div>Memory<small>Remember people and past threads</small></div><button class="sw" data-t type="button" role="switch" aria-checked="false" aria-label="Memory"></button></div>
+<div class="tg"><div>Improve Dove with my mail<small>Off unless you choose it</small></div><button class="sw" data-t type="button" role="switch" aria-checked="false" aria-label="Improve Dove"></button></div>
+<div class="btns" style="margin-top:12px"><button class="btn o" type="button">Delete my data</button></div></div></div>
+        <p class="cap">The notice text is draft wording. It must match Dove's actual policy before use.</p>
+      </div>
+    </div>
+  </section>
 
   <h2 class="part" style="margin-top:72px">Retention</h2>
-  <section class="item" id="r1"><div class="item-h"><span class="tag">R1</span><h2>No habit trigger outside the app</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="r2"><div class="item-h"><span class="tag">R2</span><h2>Dove's work doesn't carry over to the user's other inboxes</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="r3"><div class="item-h"><span class="tag">R3</span><h2>A missed important email is the one failure users never forgive</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="r4"><div class="item-h"><span class="tag">R4</span><h2>Value is never shown back to the user</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="r5"><div class="item-h"><span class="tag">R5</span><h2>Feed is the best feature and it is underused</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="r6"><div class="item-h"><span class="tag">R6</span><h2>Price vs. built-in alternatives</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="r7"><div class="item-h"><span class="tag">R7</span><h2>The best habit surface is missing on mobile</h2></div><div class="todo-box">Mockup to be added.</div></section>
-  <section class="item" id="r8"><div class="item-h"><span class="tag">R8</span><h2>No way to add a calendar event from the inbox</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r1" aria-labelledby="r1-t">
+    <div class="item-h"><span class="tag">R1</span><h2 id="r1-t">No habit trigger outside the app</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>The Today and Needs you panel is only seen when the user opens Dove. No push arrived in the morning. The only note was an email in the connected inbox.</p></div>
+      <div><h3>Why it hurts</h3><p>Sending the user back to the old email client to find Dove's brief defeats the point of a smart inbox.</p></div>
+      <div><h3>Fix</h3><p>Send a morning brief by push, widget and an optional email to a non-Dove address at a time the user picks. Show a Focus-only count on the icon.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="phone"><div class="clock">8:00</div><div class="date">Friday, November 6</div><div class="empty-p" style="padding:20px 8px;font-size:12px">No notification from Dove</div></div>
+<div class="flow" aria-label="Dove sends the brief by email to the connected Gmail, with no push"><span class="flow-n">Dove app</span><span class="flow-a" aria-hidden="true"></span><span class="flow-m">Email, not a push</span><span class="flow-a" aria-hidden="true"></span><span class="flow-n">Connected Gmail</span></div>
+<div class="gm"><div class="hd">Gmail Inbox</div><div class="r" style="background:var(--surface-selected)"><b>Dove</b><span class="t" style="color:var(--ink)">What to know this morning</span><span class="flag">Sent by Dove</span><span class="note">8:00 AM</span></div></div>
+        <p class="cap">A morning with no push. The only brief is an email in the old inbox.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Habit triggers"><button class="tab" role="tab" id="r1-tab1" aria-selected="true" aria-controls="r1-p1" type="button">Push brief</button><button class="tab" role="tab" id="r1-tab2" aria-selected="false" aria-controls="r1-p2" type="button">Widget and badge</button><button class="tab" role="tab" id="r1-tab3" aria-selected="false" aria-controls="r1-p3" type="button">Brief settings</button></div><div class="panel" role="tabpanel" id="r1-p1" aria-labelledby="r1-tab1"><div class="phone"><div class="clock">8:00</div><div class="date">Friday, November 6</div>
+<div class="notif"><div class="h"><span>Dove</span><span>8:00 AM</span></div><b>Your morning brief</b>3 need you, 1 deadline today, 2 waiting on replies.</div></div></div><div class="panel" role="tabpanel" id="r1-p2" aria-labelledby="r1-tab2" hidden><div class="stat4" style="grid-template-columns:minmax(0,1fr) auto;align-items:center">
+<div class="widget" style="background:var(--surface-card)"><b>Needs you</b><div class="l"><span>Reply to Prof. Nigam</span><span>Today</span></div><div class="l"><span>Apply on Superset</span><span>1:30 PM</span></div><div class="l"><span>Sign the form</span><span>Wed</span></div></div>
+<div style="text-align:center;background:transparent"><span class="appicon">D<i>3</i></span><div class="note" style="margin-top:8px">Focus only</div></div></div>
+<p class="note">The badge counts Focus items, not every unread email.</p></div><div class="panel" role="tabpanel" id="r1-p3" aria-labelledby="r1-tab3" hidden><div class="card"><h5>Morning brief</h5>
+<div class="tg"><div>Send at<small>Your local time</small></div><select class="sel" aria-label="Time"><option>7:30 AM</option><option selected>8:00 AM</option><option>8:30 AM</option></select></div>
+<div class="tg"><div>Push notification</div><button class="sw on" data-t type="button" role="switch" aria-checked="true" aria-label="Push"></button></div>
+<div class="tg"><div>Home screen widget</div><button class="sw on" data-t type="button" role="switch" aria-checked="true" aria-label="Widget"></button></div>
+<div class="tg" style="display:block"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><div>Email me the brief<small>To an address outside Dove</small></div><button class="sw" data-t type="button" role="switch" aria-checked="false" aria-label="Email brief"></button></div><input class="inp" style="margin-top:8px" type="email" placeholder="you@example.com" aria-label="Brief address"></div></div></div>
+        <p class="cap">Counts and names are stand-ins.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="r2" aria-labelledby="r2-t">
+    <div class="item-h"><span class="tag">R2</span><h2 id="r2-t">Dove's work doesn't carry over to the user's other inboxes</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Labels added in Dove did not appear in Gmail, and "Archive when marked done" is off by default.</p></div>
+      <div><h3>Why it hurts</h3><p>Whenever the user opens the native app and sees a mess, Dove's value is invisible and the old habit is reinforced.</p></div>
+      <div><h3>Fix</h3><p>Offer provider write-back as a reversible onboarding choice: apply labels and archive Noise after N days, with a preview of the result.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="gm"><div class="hd">Gmail Inbox</div>
+<div class="r"><b>Placements</b><span class="t">Company announcement: roles open until Nov 8</span></div>
+<div class="r"><b>Newsletter</b><span class="t">This week at CREST</span></div>
+<div class="r"><b>Superset</b><span class="t">Open for application, closes Nov 6</span></div>
+<div class="r"><b>Alumni</b><span class="t">The Yearbook Portal 2026 is live</span></div>
+<div class="r"><b>Promotions</b><span class="t">20% off this weekend</span></div></div>
+<p class="note" style="margin-top:10px"><span class="flag">No trace</span> Dove's labels stay inside Dove. "Archive when marked done" is off.</p>
+        <p class="cap">Gmail with Dove running, as found.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="card"><h5>Show Dove's work in Gmail</h5>
+<div class="tg"><div>Apply Dove labels<small>Focus, Feed and Noise appear as Gmail labels</small></div><button class="sw on" id="r2-labels" data-t type="button" role="switch" aria-checked="true" aria-label="Apply labels"></button></div>
+<div class="tg"><div>Archive Noise after<small>Leaves the Inbox. Nothing is deleted.</small></div><span style="display:flex;align-items:center;gap:8px"><select class="sel" id="r2-days" aria-label="Days"><option value="3">3</option><option value="7" selected>7</option><option value="14">14</option></select>days<button class="sw on" id="r2-arch" data-t type="button" role="switch" aria-checked="true" aria-label="Archive Noise"></button></span></div></div>
+<div class="gm" id="r2-gm" style="margin-top:12px"><div class="hd">Your Gmail now looks like this</div>
+<div class="r"><b>Placements</b><span class="t">Company announcement: roles open until Nov 8</span><span class="lab f">Focus</span></div>
+<div class="r"><b>Superset</b><span class="t">Open for application, closes Nov 6</span><span class="lab f">Focus</span></div>
+<div class="r"><b>Alumni</b><span class="t">The Yearbook Portal 2026 is live</span><span class="lab d">Feed</span></div>
+<div class="r" data-noise><b>Newsletter</b><span class="t">This week at CREST</span><span class="lab n">Noise</span></div>
+<div class="r" data-noise><b>Promotions</b><span class="t">20% off this weekend</span><span class="lab n">Noise</span></div></div>
+<p class="note" id="r2-note" style="margin-top:10px"></p>
+<p class="note" style="margin-top:6px">Where write-back is not possible (for some providers or folders), Dove says so here instead of failing quietly.</p>
+        <p class="cap">Switch the toggles to see the preview change. Mail is shown as stand-ins.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="r3" aria-labelledby="r3-t">
+    <div class="item-h"><span class="tag">R3</span><h2 id="r3-t">A missed important email is the one failure users never forgive</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Noise holds important mail next to promotions, with no summary of what was hidden and an immediate Delete all.</p></div>
+      <div><h3>Why it hurts</h3><p>One silently buried email costs more trust than a hundred correct sorts.</p></div>
+      <div><h3>Fix</h3><p>Send a "What Dove hid from you" digest, add a Never hide list seeded from frequent contacts, set a confidence threshold, and give Delete all a short undo.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="card"><h5>Noise · 48</h5><div class="sk"><i></i><b>Promotions</b><span>20% off this weekend</span></div><div class="sk"><i></i><b>Recruiter</b><span>Interview slot Thursday, please confirm</span></div><div class="sk"><i></i><b>Newsletter</b><span>This week at CREST</span></div>
+<div class="btns" style="margin-top:10px"><button class="btn s xs" type="button" tabindex="-1">Delete all</button></div>
+<p class="note" style="margin-top:8px"><span class="flag">Silent miss</span> The interview mail sits in Noise with the promotions. Nothing told the user.</p></div>
+        <p class="cap">Noise as it could look today. Contents are stand-ins.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Safety net"><button class="tab" role="tab" id="r3-tab1" aria-selected="true" aria-controls="r3-p1" type="button">Hidden digest</button><button class="tab" role="tab" id="r3-tab2" aria-selected="false" aria-controls="r3-p2" type="button">Never hide</button><button class="tab" role="tab" id="r3-tab3" aria-selected="false" aria-controls="r3-p3" type="button">Undo delete</button></div><div class="panel" role="tabpanel" id="r3-p1" aria-labelledby="r3-tab1"><div class="mail"><div class="mail-h"><b>What Dove hid from you this week</b>From Dove · Sunday</div><div class="mail-b">
+<p>These are the emails Dove was least sure about.</p>
+<div class="found"><div class="it"><span>Recruiter: Interview slot Thursday<br><small style="color:var(--ink-muted)">Noise · 62% sure</small></span><button class="btn s xs" data-restore type="button">Restore</button></div>
+<div class="it"><span>Bank: Statement ready<br><small style="color:var(--ink-muted)">Feed · 58% sure</small></span><button class="btn s xs" data-restore type="button">Restore</button></div>
+<div class="it"><span>Prof. Nigam: Re: class timing<br><small style="color:var(--ink-muted)">Feed · 55% sure</small></span><button class="btn s xs" data-restore type="button">Restore</button></div></div></div></div></div><div class="panel" role="tabpanel" id="r3-p2" aria-labelledby="r3-tab2" hidden><div class="card"><h5>Never hide</h5><div class="vip"><span>Prof. Nigam<button type="button" aria-label="Remove">×</button></span><span>placements@<button type="button" aria-label="Remove">×</button></span><span>Mom<button type="button" aria-label="Remove">×</button></span><span>Recruiter<button type="button" aria-label="Remove">×</button></span></div>
+<p class="note">Seeded from the people you write to most. Remove anyone you like.</p>
+<div class="tg" style="margin-top:12px"><div>When Dove is unsure about a known sender<small>Confidence below 70%</small></div><select class="sel" aria-label="Unsure behaviour"><option selected>Send to Focus</option><option>Send to Feed</option></select></div></div></div><div class="panel" role="tabpanel" id="r3-p3" aria-labelledby="r3-tab3" hidden><div class="card"><h5>Noise · 48</h5><div class="sk"><i></i><b>Promotions</b><span>20% off this weekend</span></div><div class="sk"><i></i><b>Newsletter</b><span>This week at CREST</span></div>
+<div class="btns" style="margin-top:10px"><button class="btn s xs" id="r3-del" type="button">Delete all</button></div>
+<div class="undo" id="r3-undo" hidden><span>Deleted 48 emails.</span><button class="btn p xs" id="r3-undo-btn" type="button">Undo</button></div>
+<p class="note" style="margin-top:8px">The undo stays for 10 seconds.</p></div></div>
+        <p class="cap">Confidence figures are illustrative.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="r4" aria-labelledby="r4-t">
+    <div class="item-h"><span class="tag">R4</span><h2 id="r4-t">Value is never shown back to the user</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Dove publishes no time-saved or accuracy numbers on its site, and I saw no equivalent in the app.</p></div>
+      <div><h3>Why it hurts</h3><p>A paid user who cannot see what Dove did has no answer at renewal time.</p></div>
+      <div><h3>Fix</h3><p>A weekly recap of emails sorted, Noise cleared, deadlines surfaced, replies drafted and minutes saved, with one cleanup action. Keep it honest.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="empty-p">No recap, count or estimate anywhere in the app.<br><span style="font-size:12px">Dove's site also publishes no time-saved numbers.</span></div>
+        <p class="cap">What the app shows today: nothing.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="mail"><div class="mail-h"><b>Your week with Dove</b>Weekly recap · Sunday</div><div class="mail-b">
+<div class="stat4"><div><div class="big-n">1,284</div><span>emails sorted</span></div><div><div class="big-n">612</div><span>Noise cleared</span></div><div><div class="big-n">14</div><span>deadlines surfaced</span></div><div><div class="big-n">9</div><span>replies drafted</span></div></div>
+<p style="font-size:14px;margin:0 0 6px"><b class="big-n" style="font-size:22px">86</b> minutes saved, estimated.</p>
+<div class="found" style="margin-top:14px"><div class="it"><span>You ignored 9 senders this month.</span><button class="btn s xs" type="button">Unsubscribe</button></div></div></div></div>
+        <p class="cap">All numbers are stand-ins.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="r5" aria-labelledby="r5-t">
+    <div class="item-h"><span class="tag">R5</span><h2 id="r5-t">Feed is the best feature and it is underused</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Feed opens as a one-at-a-time card flow with a one-line summary and per-card actions. It sits a click below Smart Inbox.</p></div>
+      <div><h3>Why it hurts</h3><p>It is the clearest form of "Do less email", yet nothing in the app leads the user to it or marks it as finished.</p></div>
+      <div><h3>Fix</h3><p>Make the card flow the daily ritual: a morning nudge, a count or streak, and a "Feed is clear" finish state.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="card"><h5>Feed · 48</h5><div class="sk"><i></i><b>Alumni</b><span>The Yearbook Portal 2026 is live</span></div><div class="sk"><i></i><b>CREST</b><span>CREST Newsletter, October 2026</span></div><div class="sk"><i></i><b>Mail Admin</b><span>Revised schedule: two-day training</span></div><div class="sk"><i></i><b>Union</b><span>Union Council nominations</span></div>
+<p class="note" style="margin-top:8px"><span class="flag">Hidden</span> The card flow ("Flow through Feed") sits behind the list. No prompt, no count, no finish.</p></div>
+        <p class="cap">Feed as a flat list, as found. Mail is paraphrased.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Feed ritual"><button class="tab" role="tab" id="r5-tab1" aria-selected="true" aria-controls="r5-p1" type="button">Morning nudge</button><button class="tab" role="tab" id="r5-tab2" aria-selected="false" aria-controls="r5-p2" type="button">Card flow</button></div><div class="panel" role="tabpanel" id="r5-p1" aria-labelledby="r5-tab1"><div class="nudge"><div><b>Clear your Feed in 2 minutes</b>5 cards left today</div><button class="btn p" type="button">Start</button></div>
+<p class="note" style="margin-top:10px">Shown inside the morning brief and on the Feed row. It appears once a day.</p></div><div class="panel" role="tabpanel" id="r5-p2" aria-labelledby="r5-tab2" hidden><div class="pbar" role="progressbar" aria-label="Feed progress"><i id="r5-bar"></i></div><div class="fmeta"><span id="r5-meta"></span><span>Feed</span></div><div class="fc" id="r5-card"></div></div>
+        <p class="cap">Click Done, Snooze or Star to move through the cards. Streak and counts are stand-ins.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="r6" aria-labelledby="r6-t">
+    <div class="item-h"><span class="tag">R6</span><h2 id="r6-t">Price vs. built-in alternatives</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Pro is $19.99 a month. Gmail and Outlook ship their own AI features, and the pricing page has no student offer.</p></div>
+      <div><h3>Why it hurts</h3><p>Students and early-career users fit well but are price-sensitive, so a single premium price filters out the audience that suits Dove.</p></div>
+      <div><h3>Fix</h3><p>Test role-based onboarding that presets Areas and Teach Dove rules, plus a student price or an annual-only discount. Judge it by retained paying users.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="card"><h5>Pricing</h5><div class="price">$19.99<small> / month</small></div><p class="note" style="margin-top:8px">One plan, one price. No student offer, and onboarding asks nothing about the user's role.</p></div>
+        <p class="cap">Pricing, as found.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Role and price"><button class="tab" role="tab" id="r6-tab1" aria-selected="true" aria-controls="r6-p1" type="button">Role onboarding</button><button class="tab" role="tab" id="r6-tab2" aria-selected="false" aria-controls="r6-p2" type="button">Pricing options</button></div><div class="panel" role="tabpanel" id="r6-p1" aria-labelledby="r6-tab1"><div class="chips" role="group" aria-label="Role"><button class="chipb" type="button" data-role="student" aria-pressed="true">Student</button><button class="chipb" type="button" data-role="founder" aria-pressed="false">Founder</button><button class="chipb" type="button" data-role="freelancer" aria-pressed="false">Freelancer</button><button class="chipb" type="button" data-role="exec" aria-pressed="false">Executive</button></div>
+<div class="card"><h5>Dove sets up for you</h5><div style="font-size:13px;font-weight:600">Areas</div><div class="tags" id="r6-areas"><span>Placements</span><span>Academics</span><span>Campus</span></div>
+<div style="font-size:13px;font-weight:600;margin-top:12px">Teach Dove rule</div><p class="note" id="r6-rule" style="margin-top:4px">Deadlines are Focus. Newsletters are Feed.</p>
+<div class="btns" style="margin-top:12px"><button class="btn p xs" type="button">Looks right</button><button class="btn s xs" type="button">Edit</button></div></div></div><div class="panel" role="tabpanel" id="r6-p2" aria-labelledby="r6-tab2" hidden><div class="chips" role="group" aria-label="Plan"><button class="chipb" type="button" data-plan="m" aria-pressed="true">Monthly</button><button class="chipb" type="button" data-plan="a" aria-pressed="false">Annual</button><button class="chipb" type="button" data-plan="s" aria-pressed="false">Student (verified)</button></div>
+<div class="card"><div class="price" id="r6-price">$19.99<small> / month</small></div><p class="note" id="r6-pnote" style="margin-top:8px">Cancel any time.</p></div>
+<p class="note" style="margin-top:10px">Test the price against retained paying users before lowering it.</p></div>
+        <p class="cap">Presets are examples. The student price is a test value, not an offer.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="r7" aria-labelledby="r7-t">
+    <div class="item-h"><span class="tag">R7</span><h2 id="r7-t">The best habit surface is missing on mobile</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>On desktop Feed opens as a card flow. In the mobile view Feed was a flat list and I could not find the card mode. This was seen in the mobile web view, not the native apps.</p></div>
+      <div><h3>Why it hurts</h3><p>The strongest daily habit is missing exactly where people check mail most.</p></div>
+      <div><h3>Fix</h3><p>Add a mobile setting that switches the AI summary card view on or off.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="mph"><div class="mph-top"><h4>Feed <span>⌄</span></h4><div class="mph-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 10h8M9.5 13h5M11 16h2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="4"/><path d="M4 11h16M9 3v4M15 3v4"/></svg></div></div><div class="mph-body"><div class="mph-sec">Today</div><div class="mrow"><span class="mav" style="background:#4aa3c7">DO</span><span class="nm">Director's Office - Innovation Fair</span><span class="tm">3:38 PM</span><span class="sm">Director announced the innovation fair</span><span class="pl">Feed</span></div><div class="mrow"><span class="mav" style="background:#b01fc0">MA</span><span class="nm">Mail Admin - Campus Cafe</span><span class="tm">2:57 PM</span><span class="sm">Cafe launches a high-protein menu<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mrow rd"><span class="mav" style="background:#555">CR</span><span class="nm">Head, CREST - Newsletter</span><span class="tm">12:46 PM</span><span class="sm">CREST newsletter highlights October<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mph-sec">Yesterday</div><div class="mrow rd"><span class="mav" style="background:#e5402f">AR</span><span class="nm">Alumni Cell - Yearbook</span><span class="tm">5 Nov</span><span class="sm">Yearbook portal is now open<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mrow rd"><span class="mav" style="background:#b01fc0">MA</span><span class="nm">Mail Admin - Elections</span><span class="tm">5 Nov</span><span class="sm">Election Commission announced dates<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mrow rd"><span class="mav" style="background:#b01fc0">MA</span><span class="nm">Mail Admin - Schedule</span><span class="tm">5 Nov</span><span class="sm">Revised training schedule posted<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div></div><div class="mph-bar"><span class="b i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13l3-8h10l3 8v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 13h5a3 3 0 0 0 6 0h5"/></svg></span><span class="b s"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px"><path d="M10 4v6M7 7h6M16 12v8M12 16h8"/></svg>Search or Ask ...</span><span class="b i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19l1-4L17 4l3 3L9 18z"/><path d="M4 21h16"/></svg></span></div></div>
+        <p class="cap">Feed on a phone, laid out like the screenshot. Names and summaries are stand-ins.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="mph"><div class="mph-top"><h4>Feed <span>⌄</span></h4><div class="mph-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 10h8M9.5 13h5M11 16h2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="4"/><path d="M4 11h16M9 3v4M15 3v4"/></svg></div></div><div class="mph-body"><div class="mph-sw"><div>AI summary card view<small>Feed opens one card at a time</small></div><button class="sw on" id="r7-sw" type="button" role="switch" aria-checked="true" aria-label="AI summary card view"></button></div><div id="r7-list" hidden><div class="mph-sec">Today</div><div class="mrow"><span class="mav" style="background:#4aa3c7">DO</span><span class="nm">Director's Office - Innovation Fair</span><span class="tm">3:38 PM</span><span class="sm">Director announced the innovation fair</span><span class="pl">Feed</span></div><div class="mrow"><span class="mav" style="background:#b01fc0">MA</span><span class="nm">Mail Admin - Campus Cafe</span><span class="tm">2:57 PM</span><span class="sm">Cafe launches a high-protein menu<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mrow rd"><span class="mav" style="background:#555">CR</span><span class="nm">Head, CREST - Newsletter</span><span class="tm">12:46 PM</span><span class="sm">CREST newsletter highlights October<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mph-sec">Yesterday</div><div class="mrow rd"><span class="mav" style="background:#e5402f">AR</span><span class="nm">Alumni Cell - Yearbook</span><span class="tm">5 Nov</span><span class="sm">Yearbook portal is now open<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mrow rd"><span class="mav" style="background:#b01fc0">MA</span><span class="nm">Mail Admin - Elections</span><span class="tm">5 Nov</span><span class="sm">Election Commission announced dates<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div><div class="mrow rd"><span class="mav" style="background:#b01fc0">MA</span><span class="nm">Mail Admin - Schedule</span><span class="tm">5 Nov</span><span class="sm">Revised training schedule posted<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;stroke:var(--ink-muted);fill:none;stroke-width:1.7;margin:0 0 0 4px;vertical-align:-2px"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg></span><span class="pl">Feed</span></div></div><div id="r7-cards"><div class="mcard"><div class="top"><span class="mav" style="background:#e5402f;width:28px;height:28px;grid-row:auto">AR</span>Alumni Cell - Yearbook<small>5 Nov</small></div><div class="sum">The yearbook portal is open. Upload your photo and details by Nov 15.</div><div class="acts"><button class="btn p xs" type="button" tabindex="-1">Done</button><button class="btn s xs" type="button" tabindex="-1">Snooze</button><button class="btn s xs" type="button" tabindex="-1">Star</button></div></div><div class="mcount">1 of 48 in Feed</div></div></div><div class="mph-bar"><span class="b i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13l3-8h10l3 8v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 13h5a3 3 0 0 0 6 0h5"/></svg></span><span class="b s"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px"><path d="M10 4v6M7 7h6M16 12v8M12 16h8"/></svg>Search or Ask ...</span><span class="b i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19l1-4L17 4l3 3L9 18z"/><path d="M4 21h16"/></svg></span></div></div>
+        <p class="cap">The switch at the top of the phone turns the card view on or off. Names and summaries are stand-ins.</p>
+      </div>
+    </div>
+  </section>
+  <section class="item" id="r8" aria-labelledby="r8-t">
+    <div class="item-h"><span class="tag">R8</span><h2 id="r8-t">No way to add a calendar event from the inbox</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Emails with deadlines have no calendar event, and there is no button inside an email or on the row to add one. Gmail offers this.</p></div>
+      <div><h3>Why it hurts</h3><p>Dove detects the deadline and then drops it. The user has to copy the date into the Add event box by hand.</p></div>
+      <div><h3>Fix</h3><p>An event chip on the email and row, an action in the right-click menu, selected-row toolbar and Needs you cards, plus an optional banner and a consent-based auto-add.</p></div>
+    </div>
+    <div class="stage">
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="hdrmail"><b>Application closes Nov 7, 11:59 PM</b><span style="color:var(--ink-muted)">Placement Committee</span></div>
+<ul class="mlist" style="margin-top:12px" aria-label="Right-click menu"><li>Mark as done</li><li>Mark as unread</li><li>Move</li><li>Label</li><li>Help me</li><li>Teach Dove</li><li>Forward as attachment</li><hr><li>Archive</li><li>Spam</li><li>Delete</li></ul>
+<p class="note" style="margin-top:8px"><span class="flag">Dropped</span> The date is detected, then lost. There is no calendar action on the email or the row.</p>
+        <p class="cap">The email header and right-click menu, as found.</p>
+      </div>
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="tabs" role="tablist" aria-label="Add to calendar"><button class="tab" role="tab" id="r8-tab1" aria-selected="true" aria-controls="r8-p1" type="button">Email chip</button><button class="tab" role="tab" id="r8-tab2" aria-selected="false" aria-controls="r8-p2" type="button">List and Today</button><button class="tab" role="tab" id="r8-tab3" aria-selected="false" aria-controls="r8-p3" type="button">Suggestions</button><button class="tab" role="tab" id="r8-tab4" aria-selected="false" aria-controls="r8-p4" type="button">Full flow</button></div><div class="panel" role="tabpanel" id="r8-p1" aria-labelledby="r8-tab1"><div class="hdrmail"><b>Application closes Nov 7, 11:59 PM</b><span style="color:var(--ink-muted)">Placement Committee</span>
+<div style="margin-top:10px"><button class="btn s xs" id="r8-chip" type="button">Due Nov 7, 11:59 PM · Add to calendar</button></div>
+<div class="cform" id="r8-form" hidden><div class="rw"><label for="r8-title">Title</label><input class="inp" id="r8-title" value="Application deadline"></div><div class="rw"><label for="r8-w">When</label><input class="inp" id="r8-w" value="Nov 7, 11:59 PM"></div><div class="rw"><label>Reminder</label><span>1 day before</span></div><div class="rw"><label>Link</label><span>Back to this email</span></div>
+<div class="btns"><button class="btn p xs" id="r8-add" type="button">Add</button><button class="btn s xs" id="r8-cancel" type="button">Cancel</button></div></div>
+<div class="toast" id="r8-done" hidden><span class="sp">✓</span><span>Added to your calendar. <u>View</u></span></div></div></div><div class="panel" role="tabpanel" id="r8-p2" aria-labelledby="r8-tab2" hidden><ul class="mlist" aria-label="Right-click menu"><li>Mark as done</li><li>Mark as unread</li><li class="hl">Add to calendar</li><li>Move</li><li>Label</li><li>Help me</li><hr><li>Archive</li><li>Delete</li></ul>
+<p class="note" style="margin:8px 0 14px">Shown only when a date is detected. The same action sits in the selected-row toolbar.</p>
+<div class="card"><h5>Needs you</h5><div class="entry"><span class="avatar"></span><div><b>HSBC's Intern Markets role is open on Superset</b><div class="btns" style="margin-top:8px"><button class="btn s xs" type="button">Apply on Superset</button><span class="chip-t" style="margin:0">by Today 1:30 PM</span><button class="btn s xs" type="button">Add to calendar</button></div></div></div></div></div><div class="panel" role="tabpanel" id="r8-p3" aria-labelledby="r8-tab3" hidden><div class="addbanner"><span>3 deadlines this week aren't on your calendar.</span><button class="btn p xs" type="button">Add all</button></div>
+<div class="card" style="margin-top:12px"><div class="tg" style="padding:0;border:0"><div>Auto-add deadlines from Focus<small>Off by default. Nothing is written without your consent.</small></div><button class="sw" data-t type="button" role="switch" aria-checked="false" aria-label="Auto-add"></button></div></div>
+<div class="card"><h5>Ask Dove</h5><div class="compose">Put this on my calendar</div><p class="note" style="margin-top:8px">Works on the open thread, too.</p></div></div>
+        <div class="panel" role="tabpanel" id="r8-p4" aria-labelledby="r8-tab4" hidden>
+<ol class="fsteps" id="r8f-steps" aria-label="Steps">
+<li><button type="button" data-s="0" aria-current="step">1 Spot</button></li><li><button type="button" data-s="1">2 Edit</button></li><li><button type="button" data-s="2">3 Confirm</button></li><li><button type="button" data-s="3">4 See it</button></li></ol>
+<div class="fstage">
+<div class="fs" data-s="0"><div class="hdrmail"><b>Application closes Nov 7, 11:59 PM</b><span style="color:var(--ink-muted)">Placement Committee</span>
+<p style="margin:10px 0;color:#cfcfcf">Please submit the form on the portal before the deadline.</p>
+<span class="ring"><button class="btn s xs" type="button" tabindex="-1">Due Nov 7, 11:59 PM · Add to calendar</button></span></div>
+<p class="note fs-n">Dove spots the date and offers one chip. The same chip shows on the inbox row.</p></div>
+<div class="fs" data-s="1" hidden><div class="hdrmail"><b>Add to calendar</b>
+<div class="cform" style="display:grid"><div class="rw"><label>Title</label><span class="inp">Application deadline</span></div><div class="rw"><label>When</label><span class="inp">Sat, Nov 7 · 11:59 PM</span></div><div class="rw"><label>Calendar</label><span class="inp">Personal (Google)</span></div><div class="rw"><label>Reminder</label><span>1 day before</span></div><div class="rw"><label>Link</label><span>Back to this email</span></div>
+<div class="btns"><span class="ring"><button class="btn p xs" type="button" tabindex="-1">Add</button></span><button class="btn s xs" type="button" tabindex="-1">Cancel</button></div></div></div>
+<p class="note fs-n">Title and time are filled in. The user can edit them or just tap Add.</p></div>
+<div class="fs" data-s="2" hidden><div class="hdrmail"><b>Application closes Nov 7, 11:59 PM</b><span style="color:var(--ink-muted)">Placement Committee</span>
+<div style="margin-top:10px"><button class="btn s xs" type="button" tabindex="-1" disabled>Added to calendar ✓</button></div></div>
+<div class="toast"><span class="sp">✓</span><span>Added to your calendar. <u>View</u></span></div>
+<p class="note fs-n">The chip changes to "Added", so it cannot be tapped twice, and a message confirms it.</p></div>
+<div class="fs" data-s="3" hidden><div class="cal4"><div class="cal4-h">SAT 7</div>
+<div class="cal4-g"><span class="hr" style="top:8px">9 PM</span><span class="hr" style="top:48px">10 PM</span><span class="hr" style="top:88px">11 PM</span>
+<div class="cal4-e"><b>Application deadline</b><span>11:59 PM · opens the email</span></div></div></div>
+<p class="note fs-n">The event sits in Calendar with a link back to the email. The reminder fires on Nov 6.</p></div>
+</div>
+<div class="btns" style="margin-top:12px"><button class="btn s xs" type="button" id="r8f-back" disabled>Back</button><button class="btn p xs" type="button" id="r8f-next">Next</button></div></div>
+        <p class="cap">Click the chip to try the quick edit, or step through "Full flow". Dates are stand-ins.</p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <script>
@@ -301,6 +1156,232 @@ button.sw{cursor:pointer}
     this.textContent = 'Saved';
     var self = this; setTimeout(function(){ self.textContent = 'Continue'; }, 1400);
   });
+  /* Tab groups (A2, A3 and any later mockup that uses .tabs) */
+  Array.prototype.forEach.call(document.querySelectorAll('.tabs'), function(group){
+    var tabs = Array.prototype.slice.call(group.querySelectorAll('.tab'));
+    function showTab(t){
+      tabs.forEach(function(x){
+        var on = x === t;
+        x.setAttribute('aria-selected', String(on));
+        document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+      });
+    }
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ showTab(t); });
+      t.addEventListener('keydown', function(e){
+        var j = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : -1;
+        if (j >= 0 && j < tabs.length){ tabs[j].focus(); showTab(tabs[j]); }
+      });
+    });
+  });
+
+  /* A3: usage meter */
+  var used = document.getElementById('a3-used');
+  if (used){
+    var segs = document.getElementById('a3-segs'), lbl = document.getElementById('a3-left'),
+        msg = document.getElementById('a3-msg'), bar = document.getElementById('a3-bar'),
+        inp = document.getElementById('a3-input'), usedOut = document.getElementById('a3-usedout');
+    for (var k = 0; k < 10; k++){ segs.appendChild(document.createElement('i')); }
+    var render = function(){
+      var u = +used.value, left = 10 - u;
+      Array.prototype.forEach.call(segs.children, function(s, idx){ s.className = idx < u ? 'used' : ''; });
+      lbl.textContent = left + ' of 10 AI actions left today';
+      usedOut.textContent = u;
+      bar.classList.toggle('low', left > 0 && left <= 3);
+      bar.classList.toggle('out', left === 0);
+      if (left === 0){
+        inp.textContent = 'You have used today’s AI actions. They reset at midnight.';
+        msg.textContent = 'Smart Inbox, Focus, Feed and Noise keep working. See what Pro adds.';
+      } else if (left <= 3){
+        inp.textContent = 'Ask Dove, or search your mail';
+        msg.textContent = left + ' left today. They reset at midnight, or go unlimited with Pro.';
+      } else {
+        inp.textContent = 'Ask Dove, or search your mail';
+        msg.textContent = 'Compose, Wingman, Summaries and Ask share these. Sorting is not counted.';
+      }
+    };
+    used.addEventListener('input', render);
+    render();
+  }
+
+  /* A4: Wrong? menu and plain-language rule save */
+  var wr = document.getElementById('a4-wrong');
+  if (wr){
+    var wm = document.getElementById('a4-menu'), wt = document.getElementById('a4-toast');
+    wr.addEventListener('click', function(){
+      var open = wr.getAttribute('aria-expanded') !== 'true';
+      wr.setAttribute('aria-expanded', String(open)); wm.hidden = !open; wt.hidden = true;
+    });
+    Array.prototype.forEach.call(wm.querySelectorAll('button'), function(b){
+      b.addEventListener('click', function(){
+        wm.hidden = true; wr.setAttribute('aria-expanded','false');
+        document.getElementById('a4-toast-t').textContent = b.dataset.msg; wt.hidden = false;
+      });
+    });
+    var sv = document.getElementById('a4-save');
+    sv.addEventListener('click', function(){
+      document.getElementById('a4-saved').hidden = false; sv.textContent = 'Saved';
+    });
+  }
+
+  /* Generic switches: <button class="sw" data-t> */
+  Array.prototype.forEach.call(document.querySelectorAll('.sw[data-t]'), function(s){
+    s.addEventListener('click', function(){
+      var on = s.getAttribute('aria-checked') !== 'true';
+      s.setAttribute('aria-checked', String(on)); s.classList.toggle('on', on);
+    });
+  });
+
+  /* A6: Send check fix */
+  var fx = document.getElementById('a6-fix');
+  if (fx){
+    fx.addEventListener('click', function(){
+      document.getElementById('a6-dup').textContent = 'the';
+      document.getElementById('a6-dup').className = '';
+      fx.textContent = 'Fixed'; fx.disabled = true;
+      document.getElementById('a6-count').textContent = 'Send check found 1 thing';
+    });
+  }
+
+  /* A7: dismissible rating card */
+  var fc = document.getElementById('a7-card');
+  if (fc){
+    var body = document.getElementById('a7-body');
+    function say(html){ body.innerHTML = html; }
+    var start = body.innerHTML;
+    fc.addEventListener('click', function(e){
+      var t = e.target.closest('[data-a]'); if (!t) return;
+      var a = t.dataset.a;
+      if (a === 'x' || a === 'later' || a === 'done'){ fc.hidden = true; document.getElementById('a7-note').hidden = false; }
+      if (a === 'yes') say('<b>Thanks.</b><p>Would you rate Dove on the App Store? It takes a few seconds.</p><div class="btns"><button class="btn p xs" type="button" data-a="done">Rate Dove</button><button class="btn s xs" type="button" data-a="later">Not now</button></div>');
+      if (a === 'no') say('<b>What could be better?</b><textarea class="ta" aria-label="Feedback"></textarea><div class="btns"><button class="btn p xs" type="button" data-a="done">Send</button><button class="btn s xs" type="button" data-a="later">Not now</button></div>');
+    });
+    document.getElementById('a7-reset').addEventListener('click', function(){
+      fc.hidden = false; body.innerHTML = start; document.getElementById('a7-note').hidden = true;
+    });
+  }
+
+  /* R2: Gmail preview reacts to toggles */
+  var wb = document.getElementById('r2-labels');
+  if (wb){
+    var wa = document.getElementById('r2-arch'), gm = document.getElementById('r2-gm'), sel = document.getElementById('r2-days');
+    function r2(){
+      var lab = wb.getAttribute('aria-checked') === 'true', arch = wa.getAttribute('aria-checked') === 'true';
+      Array.prototype.forEach.call(gm.querySelectorAll('.lab'), function(l){ l.hidden = !lab; });
+      Array.prototype.forEach.call(gm.querySelectorAll('.r[data-noise]'), function(r){ r.classList.toggle('gone', lab && arch); });
+      document.getElementById('r2-note').textContent = !lab ? 'Labels are off. Gmail looks the same as before Dove.' : (arch ? 'Noise leaves your Inbox after ' + sel.value + ' days. Nothing is deleted.' : 'Labels are applied. Noise stays in your Inbox.');
+    }
+    [wb, wa].forEach(function(s){ s.addEventListener('click', function(){ setTimeout(r2, 0); }); });
+    sel.addEventListener('change', r2); r2();
+  }
+
+  /* R3: restore buttons, VIP chips, delete undo */
+  Array.prototype.forEach.call(document.querySelectorAll('[data-restore]'), function(b){
+    b.addEventListener('click', function(){ b.textContent = 'Moved to Focus'; b.disabled = true; });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.vip button'), function(b){
+    b.addEventListener('click', function(){ b.parentNode.remove(); });
+  });
+  var dn = document.getElementById('r3-del');
+  if (dn){
+    var ud = document.getElementById('r3-undo'), un = document.getElementById('r3-undo-btn'), tm;
+    dn.addEventListener('click', function(){
+      ud.hidden = false; clearTimeout(tm);
+      tm = setTimeout(function(){ ud.hidden = true; }, 10000);
+    });
+    un.addEventListener('click', function(){ ud.hidden = true; clearTimeout(tm); });
+  }
+
+  /* R5: Feed card flow */
+  var ff = document.getElementById('r5-card');
+  if (ff){
+    var cards = [['Alumni Relations','The Yearbook Portal 2026 is live. Upload your photo by Nov 15.'],['CREST','October newsletter: three events, one deadline on Nov 12.'],['Mail Admin','Revised schedule for the two-day hands-on training.'],['Students\u2019 Union','Union Council nominations open until Friday.'],['Campus Cafe','New menu and timings from Monday.']];
+    var idx = 0, pb = document.getElementById('r5-bar'), meta = document.getElementById('r5-meta');
+    var show = function(){
+      pb.style.width = (idx / cards.length * 100) + '%';
+      if (idx >= cards.length){
+        ff.className = 'fc clear';
+        ff.innerHTML = '<div class="big-n">Feed is clear</div><p class="note">5 cards in about 2 minutes. 4 days in a row.</p><div class="btns" style="justify-content:center"><button class="btn s xs" type="button" id="r5-again">Start over</button></div>';
+        meta.textContent = 'Streak: 4 days';
+        document.getElementById('r5-again').addEventListener('click', function(){ idx = 0; ff.className = 'fc'; show(); });
+        return;
+      }
+      ff.className = 'fc';
+      ff.innerHTML = '<div class="from">' + cards[idx][0] + '</div><div class="sum">' + cards[idx][1] + '</div><div class="acts"><button class="btn p xs" type="button" data-n>Done</button><button class="btn s xs" type="button" data-n>Snooze</button><button class="btn s xs" type="button" data-n>Star</button></div>';
+      meta.textContent = (idx + 1) + ' of ' + cards.length + ' cleared today';
+      Array.prototype.forEach.call(ff.querySelectorAll('[data-n]'), function(b){ b.addEventListener('click', function(){ idx++; show(); }); });
+    };
+    show();
+  }
+
+  /* R6: role presets and price toggle */
+  var roles = {
+    student: ['Placements, Academics, Campus', 'Deadlines are Focus. Newsletters are Feed.'],
+    founder: ['Investors, Customers, Hiring', 'Investor mail is Focus. Receipts go to Done.'],
+    freelancer: ['Clients, Invoices, Leads', 'Client replies are Focus. Tool alerts are Noise.'],
+    exec: ['Board, Direct reports, Travel', 'Board and direct reports are Focus. Travel goes to Feed.']
+  };
+  var chips = document.querySelectorAll('#r6 .chipb[data-role]');
+  Array.prototype.forEach.call(chips, function(c){
+    c.addEventListener('click', function(){
+      Array.prototype.forEach.call(chips, function(x){ x.setAttribute('aria-pressed', String(x === c)); });
+      var r = roles[c.dataset.role];
+      document.getElementById('r6-areas').innerHTML = r[0].split(', ').map(function(a){ return '<span>' + a + '</span>'; }).join('');
+      document.getElementById('r6-rule').textContent = r[1];
+    });
+  });
+  var plans = {
+    m: ['$19.99', ' / month', 'Cancel any time.'],
+    a: ['$199.99', ' / year', 'About $16.67 a month, roughly 17% less than monthly.'],
+    s: ['$9.99', ' / month', 'Test value for a verified student price. Not a real offer.']
+  };
+  var pt = document.querySelectorAll('#r6 .chipb[data-plan]');
+  Array.prototype.forEach.call(pt, function(c){
+    c.addEventListener('click', function(){
+      Array.prototype.forEach.call(pt, function(x){ x.setAttribute('aria-pressed', String(x === c)); });
+      var p = plans[c.dataset.plan];
+      document.getElementById('r6-price').innerHTML = p[0] + '<small>' + p[1] + '</small>';
+      document.getElementById('r6-pnote').textContent = p[2];
+    });
+  });
+
+  /* R7: card view toggle */
+  var cv = document.getElementById('r7-sw');
+  if (cv){
+    cv.addEventListener('click', function(){
+      var on = cv.getAttribute('aria-checked') !== 'true';
+      cv.setAttribute('aria-checked', String(on)); cv.classList.toggle('on', on);
+      document.getElementById('r7-list').hidden = on;
+      document.getElementById('r7-cards').hidden = !on;
+    });
+  }
+
+  /* R8: full flow stepper */
+  var fsb = document.getElementById('r8f-next');
+  if (fsb){
+    var fsteps = Array.prototype.slice.call(document.querySelectorAll('#r8f-steps button')),
+        fsc = Array.prototype.slice.call(document.querySelectorAll('#r8-p4 .fs')),
+        fbk = document.getElementById('r8f-back'), cur = 0;
+    var go = function(n){
+      cur = Math.max(0, Math.min(fsc.length - 1, n));
+      fsc.forEach(function(el, i){ el.hidden = i !== cur; });
+      fsteps.forEach(function(b, i){ if (i === cur) b.setAttribute('aria-current','step'); else b.removeAttribute('aria-current'); });
+      fbk.disabled = cur === 0; fsb.textContent = cur === fsc.length - 1 ? 'Start over' : 'Next';
+    };
+    fsb.addEventListener('click', function(){ go(cur === fsc.length - 1 ? 0 : cur + 1); });
+    fbk.addEventListener('click', function(){ go(cur - 1); });
+    fsteps.forEach(function(b, i){ b.addEventListener('click', function(){ go(i); }); });
+  }
+
+  /* R8: add to calendar chip */
+  var ac = document.getElementById('r8-chip');
+  if (ac){
+    var form = document.getElementById('r8-form'), done = document.getElementById('r8-done');
+    ac.addEventListener('click', function(){ form.hidden = !form.hidden; done.hidden = true; });
+    document.getElementById('r8-add').addEventListener('click', function(){ form.hidden = true; done.hidden = false; ac.textContent = 'Added to calendar'; ac.disabled = true; });
+    document.getElementById('r8-cancel').addEventListener('click', function(){ form.hidden = true; });
+  }
+
   var rr = document.getElementById('a1-rr');
   rr.addEventListener('click', function(){
     var on = rr.getAttribute('aria-checked') !== 'true';
