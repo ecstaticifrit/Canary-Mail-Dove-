@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dove Mockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Tokens come from Dove_Design_System/tokens.json (sampled from the live app, approximate). */
+:root{
+  --surface-list:#1a1a1a; --surface-sidebar:#202020; --surface-card:#181818; --surface-raised:#242424;
+  --surface-selected:#29242b; --ink:#ffffff; --ink-muted:#888888; --hairline:#2a2a2e;
+  --accent-focus:#d46cc8; --focus-bg:#2a122a; --accent-feed:#7fc8d8; --feed-bg:#18242a;
+  --accent-done:#6fb48a; --accent-ai:#bfabff; --chip-bg:#1e1e24;
+  --surface-inverse:#e6e6e6; --ink-inverse:#1a1a1a; --page:#121212;
+  --radius-sm:4px; --radius-md:10px; --radius-lg:16px; --radius-pill:999px;
+  --font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --nav-h:56px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent-ai);outline-offset:2px}
+
+/* ---------- quick navbar ---------- */
+.nav{position:sticky;top:0;z-index:20;margin:0 calc(-1*max(16px,env(safe-area-inset-left,0px)));
+  padding:0 max(16px,env(safe-area-inset-left,0px));background:rgba(18,18,18,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--hairline)}
+.nav-in{max-width:1120px;margin:0 auto;height:var(--nav-h);display:flex;align-items:center;gap:20px;overflow-x:auto;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.brand{font-weight:700;font-size:15px;white-space:nowrap;margin-right:4px}
+.grp{display:flex;align-items:center;gap:4px;flex:none}
+.grp-l{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted);margin-right:6px}
+.nav a.l{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;padding:0 10px;border-radius:var(--radius-pill);
+  font-size:12px;font-weight:500;color:var(--ink-muted);text-decoration:none;white-space:nowrap}
+.nav a.l:hover{background:var(--surface-raised);color:var(--ink)}
+.nav a.l.on{background:var(--surface-selected);color:var(--ink)}
+.nav a.l.todo{opacity:.55}
+.sep{width:1px;height:20px;background:var(--hairline);flex:none}
+
+/* ---------- layout ---------- */
+main{max-width:1120px;margin:0 auto;padding-block:40px 120px}
+.intro h1{font-size:28px;line-height:1.2;margin:0 0 8px;font-weight:700;text-wrap:balance}
+.intro p{margin:0;color:var(--ink-muted);max-width:64ch}
+.part{margin:56px 0 8px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-focus)}
+section.item{scroll-margin-top:calc(var(--nav-h) + 16px);padding-top:32px;border-top:1px solid var(--hairline);margin-top:24px}
+.item-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:600;color:var(--accent-focus);background:var(--focus-bg);border-radius:var(--radius-sm);padding:2px 8px}
+.item h2{margin:0;font-size:22px;line-height:1.25;font-weight:600;text-wrap:balance}
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 28px}
+.brief div{min-width:0}
+.brief h3{margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted)}
+.brief p{margin:0;font-size:13px;color:#cfcfcf}
+.todo-box{margin-top:20px;border:1px dashed var(--hairline);border-radius:var(--radius-lg);padding:28px;color:var(--ink-muted);font-size:13px}
+
+.stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.col-h{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.col-h .dot{width:8px;height:8px;border-radius:50%}
+.before .dot{background:var(--ink-muted)} .after .dot{background:var(--accent-done)}
+.cap{margin:10px 2px 0;font-size:12px;color:var(--ink-muted)}
+
+/* ---------- app window ---------- */
+.win{background:var(--surface-list);border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden}
+.win-bar{display:flex;align-items:center;gap:6px;height:32px;padding:0 12px;background:var(--surface-sidebar);border-bottom:1px solid var(--hairline)}
+.win-bar i{width:9px;height:9px;border-radius:50%;background:#3a3a3a;display:block}
+.set{display:grid;grid-template-columns:150px minmax(0,1fr);min-height:330px}
+.set-rail{background:var(--surface-list);border-right:1px solid var(--hairline);padding:12px 8px;display:flex;flex-direction:column;gap:2px}
+.set-it{display:flex;align-items:center;gap:8px;height:32px;padding:0 8px;border-radius:var(--radius-md);font-size:12px;font-weight:500;color:#d6d6d6;white-space:nowrap}
+.set-it.on{background:var(--surface-sidebar);color:var(--ink)}
+.set-it svg{width:14px;height:14px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.set-main{padding:16px 18px;min-width:0}
+.set-t{font-size:12px;color:var(--ink-muted);margin:0 0 14px}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--hairline)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row b{display:block;font-size:13px;font-weight:600}
+.row small{display:block;font-size:12px;color:var(--ink-muted);margin-top:2px}
+.val{font-size:13px;font-weight:600;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.val.warn{color:var(--ink)}
+.flag{font-size:11px;font-weight:500;color:var(--accent-focus);background:var(--focus-bg);border-radius:var(--radius-sm);padding:2px 6px;white-space:nowrap}
+.flag.ok{color:var(--accent-done);background:#15241b}
+.sw{width:40px;height:24px;border-radius:var(--radius-pill);background:#3a3a3a;position:relative;flex:none;border:0;padding:0;cursor:default}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--ink);transition:left .15s}
+.sw.on{background:var(--ink)}
+.sw.on::after{left:19px;background:var(--ink-inverse)}
+button.sw{cursor:pointer}
+
+/* ---------- prompt card ---------- */
+.stack{display:flex;flex-direction:column;gap:16px}
+.prompt{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:20px;position:relative}
+.prompt .sp{color:var(--accent-ai);font-size:18px;line-height:1}
+.prompt h4{margin:8px 0 6px;font-size:16px;font-weight:600}
+.prompt p{margin:0 0 14px;color:#c9c9c9;font-size:13px}
+.opts{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--chip-bg);border:1px solid var(--hairline);
+  border-radius:var(--radius-md);padding:10px 12px;cursor:pointer}
+.opt:hover{border-color:#44444a}
+.opt[aria-checked="true"]{border-color:var(--accent-ai);background:var(--surface-selected)}
+.radio{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--ink-muted);flex:none;display:grid;place-items:center}
+.opt[aria-checked="true"] .radio{border-color:var(--accent-ai)}
+.opt[aria-checked="true"] .radio::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent-ai)}
+.opt b{display:block;font-size:13px;font-weight:600}
+.opt small{display:block;font-size:12px;color:var(--ink-muted)}
+.rec{margin-left:auto;font-size:11px;font-weight:500;color:var(--accent-ai)}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font:500 13px var(--font);border:0;border-radius:var(--radius-pill);padding:8px 16px;cursor:pointer}
+.btn.p{background:var(--surface-inverse);color:var(--ink-inverse)}
+.btn.s{background:var(--surface-raised);color:var(--ink)}
+.result{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:14px 16px}
+.result h5{margin:0 0 6px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted)}
+.result .row{padding:8px 0}
+.note{font-size:12px;color:var(--ink-muted);margin:0}
+.note b{color:var(--ink);font-weight:600}
+
+/* composer opt-in */
+.comp{background:var(--surface-card);border:1px solid var(--hairline);border-radius:var(--radius-lg);overflow:hidden}
+.comp-h{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--hairline);font-size:13px;font-weight:600}
+.comp-f{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-top:1px solid var(--hairline);flex-wrap:wrap}
+.comp-b{padding:12px 14px;color:var(--ink-muted);font-size:13px}
+.opt-in{display:flex;align-items:center;gap:8px;font-size:12px;color:#cfcfcf}
+
+@media (max-width:860px){
+  .stage{grid-template-columns:minmax(0,1fr)}
+  .brief{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){
+  .set{grid-template-columns:minmax(0,1fr)}
+  .set-rail{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--hairline)}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Mockup sections">
+  <div class="nav-in">
+    <span class="brand">Dove mockups</span>
+    <div class="grp"><span class="grp-l">Activation</span>
+      <a class="l" href="#a1" title="Defaults undercut the core promise">A1</a>
+      <a class="l todo" href="#a2" title="Trial is short, card-gated and inconsistent">A2</a>
+      <a class="l todo" href="#a3" title="Free tier never shows the value">A3</a>
+      <a class="l todo" href="#a4" title="Teach Dove is basic">A4</a>
+      <a class="l todo" href="#a5" title="Entry friction on the web app">A5</a>
+      <a class="l todo" href="#a6" title="Accuracy and promise gaps">A6</a>
+      <a class="l todo" href="#a7" title="Review pop-ups in the first session">A7</a>
+      <a class="l todo" href="#a8" title="Privacy notice">A8</a>
+    </div>
+    <span class="sep"></span>
+    <div class="grp"><span class="grp-l">Retention</span>
+      <a class="l todo" href="#r1" title="No habit trigger outside the app">R1</a>
+      <a class="l todo" href="#r2" title="Dove's work does not carry over">R2</a>
+      <a class="l todo" href="#r3" title="A missed important email">R3</a>
+      <a class="l todo" href="#r4" title="Value is never shown back">R4</a>
+      <a class="l todo" href="#r5" title="Feed is underused">R5</a>
+      <a class="l todo" href="#r6" title="Price vs. built-in alternatives">R6</a>
+      <a class="l todo" href="#r7" title="Habit surface missing on mobile">R7</a>
+      <a class="l todo" href="#r8" title="Add to calendar from the inbox">R8</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="intro">
+    <h1>Mockups for the Dove activation and retention fixes</h1>
+    <p>One section per item in the assignment. Dimmed links in the bar are items whose mockup is not drawn yet. Screens follow the Dove design system, and every value in them is a stand-in, not real data.</p>
+  </header>
+
+  <h2 class="part">Activation</h2>
+
+  <!-- ================= A1 ================= -->
+  <section class="item" id="a1" aria-labelledby="a1-t">
+    <div class="item-h"><span class="tag">A1</span><h2 id="a1-t">Defaults undercut the core promise</h2></div>
+    <div class="brief">
+      <div><h3>What I saw</h3><p>Notify me about and Badge count both default to All emails, and Read receipts are on. Dove's pitch is alerts only for emails that need you.</p></div>
+      <div><h3>Why it hurts</h3><p>Every email interrupts, so the user decides Dove is another client. Read receipts on by default can also expose users to their own recipients.</p></div>
+      <div><h3>Fix</h3><p>After setup, ask "Only notify me about Focus emails?" with Yes preselected. Turn read receipts off by default and make them an opt-in in the composer.</p></div>
+    </div>
+
+    <div class="stage">
+      <!-- BEFORE -->
+      <div class="before">
+        <h3 class="col-h"><span class="dot"></span>Today</h3>
+        <div class="win">
+          <div class="win-bar"><i></i><i></i><i></i></div>
+          <div class="set">
+            <div class="set-rail" aria-hidden="true">
+              <div class="set-it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/></svg>Preferences</div>
+              <div class="set-it on"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.5 2h-15z"/><path d="M10 21h4"/></svg>Notifications</div>
+              <div class="set-it"><svg viewBox="0 0 24 24"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg>Swipe actions</div>
+              <div class="set-it"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>Accounts</div>
+              <div class="set-it"><svg viewBox="0 0 24 24"><path d="M4 20c4 0 4-8 8-8s2 6 8 4"/></svg>Signatures</div>
+              <div class="set-it"><svg viewBox="0 0 24 24"><path d="M12 4v6M9 7h6M17 14v6M14 17h6"/></svg>Teach Dove</div>
+            </div>
+            <div class="set-main">
+              <p class="set-t">Notifications</p>
+              <div class="row"><div><b>Notify me about</b><small>Choose which emails are allowed to interrupt you.</small></div>
+                <div class="val warn">All emails <span class="flag">default</span></div></div>
+              <div class="row"><div><b>Badge count</b><small>Choose which emails count toward your unread badge.</small></div>
+                <div class="val warn">All emails <span class="flag">default</span></div></div>
+              <p class="set-t" style="margin:18px 0 10px">Preferences</p>
+              <div class="row"><div><b>Read receipts</b><small>See when people open the email you send.</small></div>
+                <div class="val"><span class="flag">on by default</span><span class="sw on" role="img" aria-label="On"></span></div></div>
+            </div>
+          </div>
+        </div>
+        <p class="cap">Settings, Notifications and Preferences, as found. The user has to open Settings to change any of this.</p>
+      </div>
+
+      <!-- AFTER -->
+      <div class="after">
+        <h3 class="col-h"><span class="dot"></span>Proposed</h3>
+        <div class="stack">
+          <div class="prompt" role="group" aria-labelledby="a1-q">
+            <span class="sp" aria-hidden="true">✦</span>
+            <h4 id="a1-q">Only notify me about Focus emails?</h4>
+            <p>Dove sorts your mail first. You get alerts and a badge count for Focus only, and everything else waits in Feed. Change this any time in Settings.</p>
+            <div class="opts" role="radiogroup" aria-label="Notification scope">
+              <button class="opt" role="radio" aria-checked="true" data-v="focus" type="button"><span class="radio"></span><span><b>Yes, Focus only</b><small>Alerts and badge for emails that need you</small></span><span class="rec">Recommended</span></button>
+              <button class="opt" role="radio" aria-checked="false" data-v="all" type="button"><span class="radio"></span><span><b>Keep all emails</b><small>Every new email can interrupt you</small></span></button>
+            </div>
+            <div class="btns"><button class="btn p" type="button" id="a1-apply">Continue</button><button class="btn s" type="button" id="a1-later">Decide later</button></div>
+          </div>
+
+          <div class="result" aria-live="polite">
+            <h5>Your settings after this step</h5>
+            <div class="row"><b>Notify me about</b><div class="val" id="a1-n">Focus emails</div></div>
+            <div class="row"><b>Badge count</b><div class="val" id="a1-b">Focus emails</div></div>
+            <div class="row"><b>Read receipts</b><div class="val">Off <span class="flag ok">new default</span></div></div>
+          </div>
+
+          <div class="comp">
+            <div class="comp-h"><span>New message</span><span style="color:var(--ink-muted);font-weight:400">Draft</span></div>
+            <div class="comp-b">Hi Prof. Nigam, I will send the report by Friday.</div>
+            <div class="comp-f">
+              <label class="opt-in" for="a1-rr"><button class="sw" id="a1-rr" type="button" role="switch" aria-checked="false"></button>See when people open this email</label>
+              <span class="note">Off unless you turn it on</span>
+            </div>
+          </div>
+          <p class="note"><b>Free plan:</b> the Focus-only filter is included, so the default can be fixed without a paid upgrade.</p>
+        </div>
+        <p class="cap">First-run step shown once, after the first sync. The choice can be changed at any time under Settings, Notifications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= placeholders ================= -->
+  <section class="item" id="a2"><div class="item-h"><span class="tag">A2</span><h2>The trial is short, card-gated and inconsistent</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="a3"><div class="item-h"><span class="tag">A3</span><h2>The free tier never demonstrates the product's true value</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="a4"><div class="item-h"><span class="tag">A4</span><h2>The Teach Dove feature is semi-functional and basic</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="a5"><div class="item-h"><span class="tag">A5</span><h2>Entry friction on the web app</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="a6"><div class="item-h"><span class="tag">A6</span><h2>Accuracy and promise gaps on first login</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="a7"><div class="item-h"><span class="tag">A7</span><h2>Review pop-ups in the first session</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="a8"><div class="item-h"><span class="tag">A8</span><h2>Privacy notice</h2></div><div class="todo-box">Mockup to be added.</div></section>
+
+  <h2 class="part" style="margin-top:72px">Retention</h2>
+  <section class="item" id="r1"><div class="item-h"><span class="tag">R1</span><h2>No habit trigger outside the app</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r2"><div class="item-h"><span class="tag">R2</span><h2>Dove's work doesn't carry over to the user's other inboxes</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r3"><div class="item-h"><span class="tag">R3</span><h2>A missed important email is the one failure users never forgive</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r4"><div class="item-h"><span class="tag">R4</span><h2>Value is never shown back to the user</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r5"><div class="item-h"><span class="tag">R5</span><h2>Feed is the best feature and it is underused</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r6"><div class="item-h"><span class="tag">R6</span><h2>Price vs. built-in alternatives</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r7"><div class="item-h"><span class="tag">R7</span><h2>The best habit surface is missing on mobile</h2></div><div class="todo-box">Mockup to be added.</div></section>
+  <section class="item" id="r8"><div class="item-h"><span class="tag">R8</span><h2>No way to add a calendar event from the inbox</h2></div><div class="todo-box">Mockup to be added.</div></section>
+</main>
+
+<script>
+(function(){
+  /* Navbar: highlight the section in view */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a.l'));
+  var byId = {};
+  links.forEach(function(a){ byId[a.getAttribute('href').slice(1)] = a; });
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section.item'));
+  function spy(){
+    var y = window.scrollY + 90, cur = sections[0];
+    sections.forEach(function(s){ if (s.offsetTop <= y) cur = s; });
+    links.forEach(function(a){ a.classList.remove('on'); a.removeAttribute('aria-current'); });
+    var a = byId[cur.id];
+    if (a){
+      a.classList.add('on'); a.setAttribute('aria-current','true');
+      var bar = a.closest('.nav-in');
+      if (bar){ bar.scrollLeft = a.offsetLeft - bar.clientWidth / 2 + a.offsetWidth / 2; }
+    }
+  }
+  window.addEventListener('scroll', spy, {passive:true});
+  window.addEventListener('resize', spy);
+  spy();
+
+  /* A1: the prompt updates the settings summary */
+  var opts = Array.prototype.slice.call(document.querySelectorAll('#a1 .opt'));
+  var n = document.getElementById('a1-n'), b = document.getElementById('a1-b');
+  function pick(v){
+    opts.forEach(function(o){ o.setAttribute('aria-checked', String(o.dataset.v === v)); });
+    var t = v === 'focus' ? 'Focus emails' : 'All emails';
+    n.textContent = t; b.textContent = t;
+  }
+  opts.forEach(function(o){ o.addEventListener('click', function(){ pick(o.dataset.v); }); });
+  document.getElementById('a1-later').addEventListener('click', function(){ pick('all'); });
+  document.getElementById('a1-apply').addEventListener('click', function(){
+    this.textContent = 'Saved';
+    var self = this; setTimeout(function(){ self.textContent = 'Continue'; }, 1400);
+  });
+  var rr = document.getElementById('a1-rr');
+  rr.addEventListener('click', function(){
+    var on = rr.getAttribute('aria-checked') !== 'true';
+    rr.setAttribute('aria-checked', String(on));
+    rr.classList.toggle('on', on);
+  });
+})();
+</script>
+</body>
+</html>
